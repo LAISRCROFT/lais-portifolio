@@ -1,44 +1,25 @@
 .index {
-    .dama {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .topo {
+        text-align: center;
         display: flex;
+        width: 100%;
+        height: 100%;
         align-items: center;
         justify-content: center;
-        position: absolute;
-        margin: auto;
-        top: 26%;
-        right: 0;
-        left: 0;
-        border-radius: 3px;
-        font-family: monospace;
-        color: #000;
-        font-size: 5em;
-        padding: 0 20%;
-    }
-    .center {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        margin: auto;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgb(166 166 255 / 75%);
-        border-radius: 3px;
-        font-family: monospace;
-        color: #FFF;
-        font-size: 3em;
-        padding: 0 20%;
-    }
-}
-
-body {
-    background-image: url(https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* animation: slidein 100s; */
-    animation-fill-mode: forwards;
-    /* animation-iteration-count: infinite; */
-    /* animation-direction: alternate; */
+        background-image: url(https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation-fill-mode: forwards;
+        filter: brightness(62%) saturate(0%) invert(28%) sepia(58%) saturate(370%) hue-rotate(198deg) brightness(130%) contrast(78%) opacity(80%) opacity(3.5);
+        .dama-title {
+            font-family: monospace;
+            color: #000;
+            font-size: 5em;
+        }
+    }    
 }
