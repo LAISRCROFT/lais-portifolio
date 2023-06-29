@@ -7,6 +7,7 @@ import ColumnGroup from 'primevue/columngroup';
 import InputText from 'primevue/inputtext';
 import OrganizationChart from 'primevue/organizationchart';
 import Card from 'primevue/card';
+import ScrollPanel from 'primevue/scrollpanel';
 
 Vue.use(PrimeVue);
 Vue.component('Button', Button);
@@ -16,3 +17,4 @@ Vue.component('ColumnGroup', ColumnGroup);
 Vue.component('InputText', InputText); 
 Vue.component('OrganizationChart', OrganizationChart); 
 Vue.component('Card', Card); 
+Vue.component('ScrollPanel', ScrollPanel); 
