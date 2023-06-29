@@ -1,16 +1,19 @@
 <template>
-    <div class="index">
-        <div class="topo">
-            <h1 class="dama-title">Dama</h1>
+    <div class="typewriter">
+        <div class="col">
+            <Topbar />
+            <div class="col dama">
+                Dama
+            </div>
+            <div class="col center" id="app">
+            </div>
         </div>
     </div>
-    <!-- <div>
-        <TypeWriter />
-    </div> -->
 </template>
 <script>
 import Typewriter from 'typewriter-effect/dist/core';
 export default {
+    name: 'TypeWriter',
     data() {
         return {
 
@@ -39,7 +42,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import '~/assets/scss/index.scss';
+@import '~/assets/scss/components/TypeWriter.scss';
 
 
 </style>
