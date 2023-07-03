@@ -57,7 +57,7 @@ export default {
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 0px;
+  width: 4px;
   height: 0px;
 }
 
@@ -67,7 +67,7 @@ export default {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #574559;
+  background-color: #803f88;
   border-radius: 20px;
   border: 1px solid transparent;
 }
