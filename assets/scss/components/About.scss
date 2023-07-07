@@ -1,5 +1,8 @@
 .about {
     padding-top: 4%;
+    p {
+        font-family: "Poppins";
+    }
     .h2-title {
         text-align: center;
         font-family: "Poppins";
@@ -28,6 +31,29 @@
             box-shadow: 0 0 0 0rem #a6d5fa;
             color: #7576b16e;
         }
+    }
+    .p-about {
+        letter-spacing: 1px;
+    }
+    .basic-informations {
+        font-family: "Poppins";
+        letter-spacing: 1px;
+        // border: solid 1px #07070a;
+        // padding: 15px;
+        .metadata-about {
+            font-weight: 600;
+            .image-metadata {
+                width: 4%;
+            }
+        }
+    }
+    .div-title-basic-informations {
+        background: #7576b1;
+        color: #FFF;
+        font-family: 'Poppins';
+        text-align: center;
+        padding: 4px 0px;
+        border-radius: 7px;
     }
 }
 @media screen and (min-width: 576px) {
