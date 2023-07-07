@@ -1,0 +1,15 @@
+.about {
+    .p-panel .p-panel-header {
+        background: #7576b1 !important;
+        color: #FFF !important;
+        font-family: 'Poppins';
+        font-weight: 600;
+        .p-panel-header-icon {
+            color: #FFF !important;
+        }
+    }
+    .p-panel .p-panel-content {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
