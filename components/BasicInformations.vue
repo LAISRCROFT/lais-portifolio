@@ -20,10 +20,10 @@
                             <b class="metadata-about">Location:</b> Brazil <!--<img src="../assets/images/Flag_of_Brazil.svg.png" class="image-metadata"/>-->
                         </div>
                         <div class="col-12">
-                            <b class="metadata-about">Favorite Color:</b> Red
+                            <b class="metadata-about">Height:</b> 1.63 &nbsp; &nbsp;
                         </div>
                         <div class="col-12">
-                            <b class="metadata-about">Height:</b> 1.63 &nbsp; &nbsp; <b class="metadata-about">Weight:</b> 45.5kg
+                            <b class="metadata-about">Weight:</b> 45.5kg
                         </div>
                     </div>
                 </div>
@@ -41,6 +41,9 @@
                 </div>
                 <div class="col-12 col-md-6 flex align-items-center justify-content-center">
                     <div class="row">
+                        <div class="col-12">
+                            <b class="metadata-about">Favorite Color:</b> Red
+                        </div>
                         <div class="col-12">
                             <b class="metadata-about">Favorite artist:</b> Taylor Swift
                         </div>

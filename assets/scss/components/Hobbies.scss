@@ -2,6 +2,11 @@
     .organiza-row-hobbies {
         display: flex;
         justify-content: center;
+        .align-switchs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .show-color-images {
             position: absolute;
             right: calc(6% + 1em);
@@ -17,33 +22,88 @@
                 border-radius: 100%;
                 cursor: pointer;
             }
+            .title-divider {
+                background: #FFF;
+                font-weight: 500;
+                padding: 0 6px;
+            }
             .imagens-icons-png {
                 width: 74%;
                 cursor: pointer;
             }
         }
+        .p-divider.p-divider-horizontal:before {
+            border-top: 1px #ffffff;
+        }
         .p-panel {
             .p-panel-header {
                 background: #7576b1;
                 color: #FFF;
+                display: none;
             }
             .p-panel-icons {
                 color: #FFF
             }
         }
+        
     }
 }
 @media screen and (min-width: 368px) {
     .hobbies {
         .organiza-row-hobbies {
+            .p-divider .p-divider-content {
+                background-color: transparent;
+                text-align: initial;
+            }
             .show-color-images {
             }
             .col-imagens-icons {
                 .imagens-icons {
-                    width: 42%;
+                    width: 41%;
+                    // width: 42%;
                 }
                 .imagens-icons-png {
-                    width: 42%;
+                    width: 41%;
+                    background: #FFF;
+                    // width: 42%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .hobbies {
+        .organiza-row-hobbies {
+            .image-collapsed-12 {
+                width: 19% !important;
+            }
+            .hobbies .p-panel .p-panel-content {
+                padding-top: 15%;
+                padding-bottom: 10px;
+                margin-top: -10%;
+                border-top: solid 1px #dee2e6;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .hobbies {
+        .organiza-row-hobbies {
+            .p-divider .p-divider-content {
+                background-color: transparent;
+                text-align: initial;
+            }
+            .show-color-images {
+            }
+            .col-imagens-icons {
+                .imagens-icons {
+                    width: 24%;
+                    // width: 42%;
+                }
+                .imagens-icons-png {
+                    width: 24%;
+                    background: #FFF;
+                    // width: 42%;
                 }
             }
         }

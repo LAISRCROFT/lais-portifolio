@@ -16,6 +16,7 @@ import Fieldset from 'primevue/fieldset';
 import Panel from 'primevue/panel';
 import Chip from 'primevue/chip';
 import Divider from 'primevue/divider';
+import Dropdown from 'primevue/dropdown';
 
 Vue.use(PrimeVue);
 Vue.component('Button', Button);
@@ -34,3 +35,4 @@ Vue.component('Fieldset', Fieldset);
 Vue.component('Panel', Panel); 
 Vue.component('Chip', Chip); 
 Vue.component('Divider', Divider); 
+Vue.component('Dropdown', Dropdown); 
