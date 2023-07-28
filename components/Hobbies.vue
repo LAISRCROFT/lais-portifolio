@@ -131,13 +131,11 @@
             expandedAll() {
                 console.log(this.expandedAll)
                 if (this.expandedAll) {
-                    console.log("verdadeiro ")
                     for (let i = 0; i < this.hobbies.length; i++) {
                         this.hobbies[i].collapsed = false
                     }
                 }
                 else {
-                    console.log("falso")
                     for (let i = 0; i < this.hobbies.length; i++) {
                         this.hobbies[i].collapsed = true
                     }

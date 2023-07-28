@@ -1,0 +1,48 @@
+{
+    "topbar": {
+        "home": "Home",
+        "about": "Acerca de",
+        "portfolio": "portafolio",
+        "contacts": "contactos"
+    },
+    "home": {
+        "typeWriterPT1": "¡Hola, soy <strong>Dama</strong>!" ,
+        "typeWriterPT2": "Aquí conocerás un poco de <strong>mi</strong> ",
+        "typeWriterPT3": "y mi trabajo, ¡bienvenido!" 
+    },
+    "about": {
+        "title": "Acerca de mí",
+        "introduction": "Soy diseñadora y desarrolladora web creativa",
+        "introduction_text": "Soy Lais. Soy un desarrollador web junior full stack en la empresa en la que he estado trabajando durante 4 años. Mi parte favorita del trabajo es el frontend y el diseño web. Me gusta trabajar en el área de programación y también en el área de diseño y comunicación visual.",
+        "basic_informations_metadata": {
+            "nickname": "Apodo",
+            "name": "Nombre",
+            "gender": "Género",
+            "date_birth": "Fecha de nacimiento",
+            "location": "Ubicación",
+            "height": "Altura",
+            "weight": "Peso",
+            "favorite_color": "Color favorito",
+            "favorite_artists": "Artista favorito",
+            "favorite_bands": "Banda favorita",
+            "music_genres": "Géneros musicales",
+            "literaly_genres": "Géneros literales",
+            "preferred_language": "Lenguaje preferido"
+        },
+        "basic_informations_data": {
+            "nickname": "Dama",
+            "name": "Lais",
+            "gender": "Feminino",
+            "date_birth": "Abril 9, 2001",
+            "location": "Brasil",
+            "height": "1.63",
+            "weight": "45.5kg",
+            "favorite_color": "Rojo",
+            "favorite_artists": "Taylor Swift",
+            "favorite_bands": "Skillet",
+            "music_genres": ["pop", "rock", "alternativa"],
+            "literaly_genres": ["romance", "terror", "sci-fi"],
+            "preferred_language": "JavaScript"
+        }
+    }
+}

@@ -1,19 +1,25 @@
 <template>
     <div class="topbar">
-        <Button label="Home" class="buttons-menu" />
-        <Button label="About" class="buttons-menu" @click="scrollToSection('section_about')"/>
-        <Button label="Portfolio" class="buttons-menu" />
-        <Button label="Contacts" class="buttons-menu" />
+      <Button :key="i18ControlCounter" :label="this.$i18n.topbar.home" class="buttons-menu" />
+      <Button :key="i18ControlCounter" :label="this.$i18n.topbar.about" class="buttons-menu" @click="scrollToSection('section_about')"/>
+      <Button :key="i18ControlCounter" :label="this.$i18n.topbar.portfolio" class="buttons-menu" />
+      <Button :key="i18ControlCounter" :label="this.$i18n.topbar.contacts" class="buttons-menu" />
     </div>
   </template>
   
   <script>
     export default {
       name: 'Topbar',
+      props: ['i18Controller'],
       data() {
         return {
-
+          i18ControlCounter: 0,
         };
+      },
+      watch: {
+        i18Controller(){
+          this.i18ControlCounter++;
+        }
       },
       methods: {
         scrollToSection(sectionId) {

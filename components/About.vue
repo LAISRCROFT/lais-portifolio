@@ -2,7 +2,7 @@
     <div class="about">
         <div class="row mb-5">
             <div class="col-12">
-                <h2 class="h2-title">About me</h2>
+                <h2 class="h2-title">{{this.$i18n.about.title}}</h2>
             </div>
             <div class="col-12 mb-5">
                 <div class="row mb-0 mb-md-5">
@@ -99,7 +99,7 @@
   </template>
   
   <script>
-    import PhotoService from "../controllers/services/PhotoService"
+    import eventBus from '../plugins/eventBus';
     export default {
         name: 'About',
         data() {
@@ -177,22 +177,25 @@
                 ],
                 displayBasic2: false,
                 allImagesLoaded: false,
-                isCollapsed: true
+                isCollapsed: true,
+                selectedOption: ''
             }
         },
-        // galleriaService: null,
-        created() {
-            // this.galleriaService = new PhotoService();
+        async created() {
+            eventBus.$on('att-idioma', async(option) => {
+                this.selectedOption = option;
+                setTimeout(() => {
+                    console.log("this.$i18n.about.title: ", this.$i18n.about.title)
+                }, 500)
+            });
         },
         mounted() {
-            // this.galleriaService.getImages().then(data => this.images = data);
             this.onImageLoad()
         },
         methods: {
             onImageLoad() {
                 // Verificar se todas as imagens foram carregadas
                 const allImagesLoaded = this.images.every((image) => {
-                    // console.log("img ", image)
                     return image; // Adicione a propriedade "loaded" aos objetos de imagem no array
                 });
 

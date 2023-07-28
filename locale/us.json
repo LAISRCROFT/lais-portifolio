@@ -1,0 +1,48 @@
+{
+    "topbar": {
+        "home": "Home",
+        "about": "About",
+        "portfolio": "Portfolio",
+        "contacts": "Contacts"
+    },
+    "home": {
+        "typeWriterPT1": "Hello, I'm <strong>Dama</strong>!" ,
+        "typeWriterPT2": "Here you will know a little about <strong>me</strong> ",
+        "typeWriterPT3": "and my work, welcome!" 
+    },
+    "about": {
+        "title": "About me",
+        "introduction": "I'Am a Creative Web Designer And Developer",
+        "introduction_text": "I'm Lais. I'm a junior full stack web developer at the company I've been working for 4 years. My favorite part of the job is the frontend and web design. I like to work in the area of ​​programming and also in the area of ​​design and visual communication.",
+        "basic_informations_metadata": {
+            "nickname": "Nickname",
+            "name": "Name",
+            "gender": "Gender",
+            "date_birth": "Date of Birth",
+            "location": "location",
+            "height": "Height",
+            "weight": "Weight",
+            "favorite_color": "Favorite Color",
+            "favorite_artists": "Favorite Artist",
+            "favorite_bands": "Favorite Band",
+            "music_genres": "Music Genres",
+            "literaly_genres": "Literaly Genres",
+            "preferred_language": "Preferred Language"
+        },
+        "basic_informations_data": {
+            "nickname": "Dama",
+            "name": "Lais",
+            "gender": "Feminine",
+            "date_birth": "April 9, 2001",
+            "location": "Brazil",
+            "height": "1.63",
+            "weight": "45.5kg",
+            "favorite_color": "Red",
+            "favorite_artists": "Taylor Swift",
+            "favorite_bands": "Skillet",
+            "music_genres": ["pop", "rock", "alternative"],
+            "literaly_genres": ["romance", "horror", "sci-fi"],
+            "preferred_language": "JavaScript"
+        }
+    }
+}
