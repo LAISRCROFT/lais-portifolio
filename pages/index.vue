@@ -1,8 +1,10 @@
 <template>
     <div class="index row">
         <div class="topo col-12">
-            <TopbarDropdown @localizationChanged='localizationChanged' />
-            <Topbar :i18Controller='i18Controll' />
+            <div>
+                <TopbarDropdown @localizationChanged='localizationChanged' />
+                <Topbar :i18Controller='i18Controll' />
+            </div>
             <div class="row w-100 text-center row-dama-title d-flex justify-content-center">
                 <div class="col-12 col-dama-title">
                     <h1 class="dama-title">Dama</h1>

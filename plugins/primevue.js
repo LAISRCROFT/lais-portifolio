@@ -18,6 +18,7 @@ import Chip from 'primevue/chip';
 import Divider from 'primevue/divider';
 import Dropdown from 'primevue/dropdown';
 import AutoComplete from 'primevue/autocomplete';
+import Sidebar from 'primevue/sidebar';
 
 Vue.use(PrimeVue);
 Vue.component('Button', Button);
@@ -38,3 +39,4 @@ Vue.component('Chip', Chip);
 Vue.component('Divider', Divider); 
 Vue.component('Dropdown', Dropdown); 
 Vue.component('AutoComplete', AutoComplete); 
+Vue.component('Sidebar', Sidebar); 

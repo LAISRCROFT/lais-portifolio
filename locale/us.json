@@ -14,6 +14,7 @@
         "title": "About me",
         "introduction": "I'Am a Creative Web Designer And Developer",
         "introduction_text": "I'm Lais. I'm a junior full stack web developer at the company I've been working for 4 years. My favorite part of the job is the frontend and web design. I like to work in the area of ​​programming and also in the area of ​​design and visual communication.",
+        "basic_informations_title": "Basic informations",
         "basic_informations_metadata": {
             "nickname": "Nickname",
             "name": "Name",
@@ -43,6 +44,56 @@
             "music_genres": ["pop", "rock", "alternative"],
             "literaly_genres": ["romance", "horror", "sci-fi"],
             "preferred_language": "JavaScript"
+        },
+        "interests_and_hobbies": {
+            "title": "Interests and Hobbies",
+            "description": "I highlight some hobbies and interests that I have and practice!",
+            "switches": {
+                "color": "Color",
+                "expand_all": "Expand all"
+            },
+            "hobbies": {
+                "programming": {
+                    "title": "Programming",
+                    "description": "I like to program something I have in mind in my spare time, it makes me expand my knowledge in the area."
+                },
+                "anime": {
+                    "title": "Anime",
+                    "description": "I like to watch anime and read manga, I really admire Japanese culture especially their animations."
+                },
+                "cosplay": {
+                    "title": "Cosplay",
+                    "description": "Whenever I can, I like to dress up as a character I love."
+                },
+                "create": {
+                    "title": "Create",
+                    "description": "I always chose to create models, drawings, characters, etc. of my own creation rather than using one that already exists."
+                },
+                "drawing": {
+                    "title": "Drawing",
+                    "description": "As my main hobby, I love to draw. A few years ago I migrated to digital drawing, because before that I had several sketchbooks full of drawings and drafts."
+                },
+                "edit": {
+                    "title": "Edit",
+                    "description": "I've always loved editing photos, putting together banners and folders in editing programs, especially PhotoShop."
+                },
+                "games": {
+                    "title": "Games",
+                    "description": "I always look for a good game when I get home from work to relax. Games are things that give me pleasure."
+                },
+                "piano": {
+                    "title": "Piano",
+                    "description": "I like to play the piano and the guitar, but mainly the piano. When I touch him, I always feel immense peace."
+                },
+                "read": {
+                    "title": "Read",
+                    "description": "I love reading science fiction books, it always opens my mind to a world full of imagination!"
+                },
+                "writing": {
+                    "title": "Writing",
+                    "description": "I love to write my own books and poems, create my own characters and post them for people to notice the most amazing things I could achieve in my imagination!"
+                }
+            }
         }
     }
 }

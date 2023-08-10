@@ -5,25 +5,25 @@
                 <div class="col-12 col-md-5 flex align-items-center justify-content-center">
                     <div class="row">
                         <div class="col-12">
-                            <b class="metadata-about">Nickname:</b> Dama
+                            <b class="metadata-about">{{ i18n.basic_informations_metadata.nickname }}:</b> {{ i18n.basic_informations_data.nickname }}
                         </div>
                         <div class="col-12">
-                            <b class="metadata-about">Name:</b> Lais
+                            <b class="metadata-about">{{ i18n.basic_informations_metadata.name }}:</b> {{ i18n.basic_informations_data.name }}
                         </div>
                         <div class="col-12">
-                            <b class="metadata-about">Gender:</b> Feminine
+                            <b class="metadata-about">{{ i18n.basic_informations_metadata.gender }}:</b> {{ i18n.basic_informations_data.gender }}
                         </div>
                         <div class="col-12">
-                            <b class="metadata-about">Date of Birth:</b> April 9, 2001
+                            <b class="metadata-about">{{ i18n.basic_informations_metadata.date_birth }}:</b> {{ i18n.basic_informations_data.date_birth }}
                         </div>
                         <div class="col-12">
-                            <b class="metadata-about">Location:</b> Brazil <!--<img src="../assets/images/Flag_of_Brazil.svg.png" class="image-metadata"/>-->
+                            <b class="metadata-about">{{ i18n.basic_informations_metadata.location }}:</b> {{ i18n.basic_informations_data.location }}
                         </div>
                         <div class="col-12">
-                            <b class="metadata-about">Height:</b> 1.63 &nbsp; &nbsp;
+                            <b class="metadata-about">{{ i18n.basic_informations_metadata.height }}:</b> {{ i18n.basic_informations_data.height }}
                         </div>
                         <div class="col-12">
-                            <b class="metadata-about">Weight:</b> 45.5kg
+                            <b class="metadata-about">{{ i18n.basic_informations_metadata.weight }}:</b> {{ i18n.basic_informations_data.weight }}
                         </div>
                     </div>
                 </div>
@@ -42,28 +42,28 @@
                 <div class="col-12 col-md-6 flex align-items-center justify-content-center">
                     <div class="row">
                         <div class="col-12">
-                            <b class="metadata-about">Favorite Color:</b> Red
+                            <b class="metadata-about">{{ i18n.basic_informations_metadata.favorite_color }}:</b> {{ i18n.basic_informations_data.favorite_color }}
                         </div>
                         <div class="col-12">
-                            <b class="metadata-about">Favorite artist:</b> Taylor Swift
+                            <b class="metadata-about">{{ i18n.basic_informations_metadata.favorite_artists }}:</b> {{ i18n.basic_informations_data.favorite_artists }}
                         </div>
                         <div class="col-12">
-                            <b class="metadata-about">Favorite band:</b> Skillet
+                            <b class="metadata-about">{{ i18n.basic_informations_metadata.favorite_bands }}:</b> {{ i18n.basic_informations_data.favorite_bands }}
                         </div>
                         <div class="col-12">
-                            <b class="metadata-about">Music genres:</b> 
-                                <Chip label="pop" class="mr-5 custom-chip" />
-                                <Chip label="rock" class="mr-5 custom-chip" />
-                                <Chip label="alternative" class="mr-5 custom-chip" />
+                            <b class="metadata-about">{{ i18n.basic_informations_metadata.music_genres }}:</b> 
+                                <Chip :label="`${i18n.basic_informations_data.music_genres[0]}`" class="mr-5 custom-chip" />
+                                <Chip :label="`${i18n.basic_informations_data.music_genres[1]}`" class="mr-5 custom-chip" />
+                                <Chip :label="`${i18n.basic_informations_data.music_genres[2]}`" class="mr-5 custom-chip" />
                         </div>
                         <div class="col-12">
-                            <b class="metadata-about">Literary genres:</b> 
-                                <Chip label="romance" class="mr-5 custom-chip" />
-                                <Chip label="horror" class="mr-5 custom-chip" />
-                                <Chip label="sci-fi" class="mr-5 custom-chip" />
+                            <b class="metadata-about">{{ i18n.basic_informations_metadata.literaly_genres }}:</b> 
+                                <Chip :label="`${i18n.basic_informations_data.literaly_genres[0]}`" class="mr-5 custom-chip" />
+                                <Chip :label="`${i18n.basic_informations_data.literaly_genres[1]}`" class="mr-5 custom-chip" />
+                                <Chip :label="`${i18n.basic_informations_data.literaly_genres[2]}`" class="mr-5 custom-chip" />
                         </div>
                         <div class="col-12">
-                            <b class="metadata-about">Preferred language:</b> JavaScript
+                            <b class="metadata-about">{{ i18n.basic_informations_metadata.preferred_language }}:</b> {{ i18n.basic_informations_data.preferred_language }}
                         </div>
                     </div>
                 </div>
@@ -73,18 +73,29 @@
   </template>
   
   <script>
+    import eventBus from '../plugins/eventBus';
     export default {
         name: 'Hobbies',
         data() {
             return {
-                
+                i18n: {}
             }
+        },
+        async created() {
+            this.i18n = this.$i18n.about
+            console.log("this.$i18n.about: ", this.$i18n.about)
+            eventBus.$on('att-idioma', async(option) => {
+                this.selectedOption = option;
+                setTimeout(() => {
+                    console.log("this.$i18n.about: ", this.$i18n.about)
+                    this.i18n = this.$i18n.about
+                }, 500)
+            });
         },
         methods: {
             
         },
         mounted() {
-            
         }
     }
   </script>
