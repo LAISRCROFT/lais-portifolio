@@ -2,7 +2,7 @@
     <div class="about">
         <div class="row mb-5">
             <div class="col-12">
-                <h2 class="h2-title">About me</h2>
+                <h2 class="h2-title">{{ i18n.title }}</h2>
             </div>
             <div class="col-12 mb-5">
                 <div class="row mb-0 mb-md-5">
@@ -55,13 +55,12 @@
                         </Galleria>
                     </div>
                     <div class="col-10 col-sm-6 col-lg-6 col-xl-6 col-xxl-5 mt-5 offset-1 offset-sm-0">
-                        <h3>I'Am a Creative Web Designer And Developer</h3>
+                        <h3>{{ i18n.introduction }}</h3>
                         <p class="p-about mt-3">
-                            I'm Lais. I'm a junior full stack web developer at the company I've been working for 4 years. My favorite part of the job is the frontend and web design. I like to work in the area of ​​programming and also in the area of ​​design and visual communication.
+                            {{ i18n.introduction_text }}
                         </p>
-                        
                         <Panel 
-                            header="Basic informations" 
+                            :header="`${i18n.basic_informations_title}`" 
                             :toggleable="true" 
                             :collapsed.sync="isCollapsed"
                             class="panel-informations d-none d-lg-block"
@@ -71,7 +70,7 @@
                     </div>
                     <div class="col-10 col-sm-10 col-lg-6 col-xl-6 col-xxl-5 mt-5 offset-1 offset-sm-1 d-block d-lg-none">
                         <div class="div-title-basic-informations mb-2">
-                            Basic informations
+                            {{ i18n.basic_informations_title }}
                         </div>
                         <p class="basics-infomations">
                             <BasicInformations />
@@ -85,25 +84,13 @@
                 </div>
                 <div class="row">
                     <div class="offset-1 offset-xxl-2 col-10 col-xxl-8 mt-1">
-                        <h3>Interests and Hobbies</h3>
+                        <h3>{{ i18n.interests_and_hobbies.title }}</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ipsum risus.
+                            {{ i18n.interests_and_hobbies.description }}
                         </p>
                     </div>
                 </div>
                 <Hobbies />
-                <!-- <p>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                        Toggle width collapse
-                    </button>
-                </p>
-                <div style="min-height: 120px;">
-                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                        <div class="card card-body" style="width: 300px;">
-                        This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
       
@@ -111,7 +98,8 @@
   </template>
   
   <script>
-    import PhotoService from "../controllers/services/PhotoService"
+    import eventBus from '../plugins/eventBus';
+
     export default {
         name: 'About',
         data() {
@@ -189,27 +177,31 @@
                 ],
                 displayBasic2: false,
                 allImagesLoaded: false,
-                isCollapsed: true
+                isCollapsed: true,
+                selectedOption: '',
+                i18n: {}
             }
         },
-        // galleriaService: null,
-        created() {
-            // this.galleriaService = new PhotoService();
+        async created() {
+            this.i18n = this.$i18n.about
+            eventBus.$on('att-idioma', async(option) => {
+                this.selectedOption = option;
+                setTimeout(() => {
+                    this.i18n = this.$i18n.about
+                }, 500)
+            });
         },
         mounted() {
-            // this.galleriaService.getImages().then(data => this.images = data);
             this.onImageLoad()
         },
         methods: {
             onImageLoad() {
-                // Verificar se todas as imagens foram carregadas
                 const allImagesLoaded = this.images.every((image) => {
-                    // console.log("img ", image)
-                    return image; // Adicione a propriedade "loaded" aos objetos de imagem no array
+                    return image;
                 });
 
                 if (allImagesLoaded) {
-                    this.allImagesLoaded = true; // Todas as imagens foram carregadas
+                    this.allImagesLoaded = true;
                 }
             }
         }

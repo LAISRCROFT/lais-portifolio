@@ -2,14 +2,53 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: absolute;
+    position: fixed;
     margin: auto;
-    top: 3%;
+    top: 0%;
+    padding-top: 1.5% !important;
     right: 0;
     left: 0;
     border-radius: 3px;
-    padding: 0px 8%;
+    /* padding: 0px 4%; */
     z-index: 1;
+    background: transparent;
+    .menu-button-sidebar {
+        .menu-icon-sidebar {
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 2em;
+            position: fixed;
+            right: 3%;
+            mix-blend-mode: exclusion;
+        }
+    }
+
+    .sidebar {
+        text-align: center;
+        font-size: 1.5em;
+        font-family: "Poppins";
+        text-transform: uppercase;
+        font-weight: 300;
+        color: #7c7cbf;
+        padding: 36px;
+        .itens-sidebar {
+            // a {
+            //     &.active {
+            //         border: solid
+            //     }
+            // }
+        }
+    }
+
+    .p-dropdown {
+        // width: 14rem;
+    }
+    
+    .country-item-value {
+        img.flag {
+            width: 17px;
+        }
+    }
 
     .buttons-menu {
         font-family: monospace;
@@ -30,5 +69,15 @@
         p-button:focus {
             box-shadow: none;
         }
+    }
+    &.colored-text {
+        color: red; // Defina a cor desejada quando a classe é aplicada
+        background: #7576b185;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .topbar {
+        padding: 0px 8%;
     }
 }

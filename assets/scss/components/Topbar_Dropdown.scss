@@ -1,0 +1,45 @@
+.topbar-dropdawn {
+    position: fixed;
+    /* margin: auto; */
+    top: 3%;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    margin-left: 8%;
+    width: 15em;
+    z-index: 0;
+    .dropdown-idioma {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        background: transparent;
+        border: solid 1px #FFF;
+        font-family: monospace;
+        font-size: 1.3em;
+        color: #FFF;
+        font-weight: 100;
+        width: 48%;
+        padding: 4px 6px;
+        border-radius: 10px;
+        &.focus {
+            border: 0
+        }
+        p-button:focus {
+            box-shadow: none;
+        }
+        &:focus-visible {
+            outline: -webkit-focus-ring-color auto 0px;
+        }
+        option {
+            background: #7c7cbf;
+            border-bottom: solid 1px #FFF;
+            &:hover {
+                background: #b0b0d9 !important;
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .topbar-dropdawn {
+        z-index: 10;
+    }
+}

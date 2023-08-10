@@ -1,8 +1,11 @@
 <template>
     <div class="index row">
         <div class="topo col-12">
-            <Topbar />
-            <div class="row w-100 text-center row-dama-title">
+            <div>
+                <TopbarDropdown @localizationChanged='localizationChanged' />
+                <Topbar :i18Controller='i18Controll' />
+            </div>
+            <div class="row w-100 text-center row-dama-title d-flex justify-content-center">
                 <div class="col-12 col-dama-title">
                     <h1 class="dama-title">Dama</h1>
                 </div>
@@ -18,32 +21,49 @@
 </template>
 <script>
 import Typewriter from 'typewriter-effect/dist/core';
+import eventBus from '../plugins/eventBus'
+
 export default {
     data() {
         return {
-
+            i18Controll: 0,
+            selectedOption: ''
         };
     },
     mounted() {
         this.typeWriterEffect()
     },
+    async created() {
+        eventBus.$on('att-idioma', async(option) => {
+            this.selectedOption = option;
+            setTimeout(() => {
+                this.typeWriterEffect()
+            }, 500)
+        });
+    },
     methods: {
-        typeWriterEffect() {
+        localizationChanged(){
+            this.i18Controll++
+        },
+        async typeWriterEffect() {
             var app = document.getElementById('app');
             var typewriter = new Typewriter(app, {
                 loop: true,
                 delay: 75,
             });
             typewriter
-            .typeString("Hello, I'm the <strong>Dama</strong>!")
+            .typeString(this.$i18n.home.typeWriterPT1)
             .pauseFor(300)
-            .deleteChars(20)
-            .typeString('Here you will know a little about <strong>me</strong> ')
-            .typeString('and my work, welcome!')
+            .deleteChars(this.$i18n.home.typeWriterPT1.length)
+            .typeString(this.$i18n.home.typeWriterPT2)
+            .typeString(this.$i18n.home.typeWriterPT3)
             .pauseFor(1000)
             .start();
-        }
+        },
     },
+    watch: {
+        
+    }
 };
 </script>
 <style lang="scss">

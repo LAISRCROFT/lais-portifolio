@@ -28,6 +28,7 @@
                 font-family: monospace;
                 color: #FFF;
                 font-size: 3em;
+                width: 100%;
             }
         }
     }
@@ -43,5 +44,17 @@
         background-size: cover;
         background-repeat: no-repeat;
         z-index: -1;
+        mix-blend-mode: difference;
     }  
+}
+@media screen and (min-width: 1040px) {
+    .index {
+        .topo {
+            .row-dama-title {
+                .typewriter-effect {
+                    width: 70%;
+                }
+            }
+        }
+    }
 }

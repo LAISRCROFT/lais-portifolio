@@ -1,0 +1,99 @@
+{
+    "topbar": {
+        "home": "Home",
+        "about": "Sobre",
+        "portfolio": "Portifólio",
+        "contacts": "Contatos"
+    },
+    "home": {
+        "typeWriterPT1": "Olá, Eu sou a <strong>Dama</strong>!" ,
+        "typeWriterPT2": "Aqui você conhecerá um pouco sobre <strong>mim</strong> ",
+        "typeWriterPT3": "e o meu trabalho, seja bem-vindo!" 
+    },
+    "about": {
+        "title": "Sobre mim",
+        "introduction": "Sou uma Web Designer e Desenvolvedor Driativo",
+        "introduction_text": "Eu sou a Laís. Sou um desenvolvedor web full stack júnior na empresa em que trabalho há 4 anos. Minha parte favorita do trabalho é o front-end e o web design. Gosto de trabalhar na área de programação e também na área de design e comunicação visual.",
+        "basic_informations_title": "Informações básicas",
+        "basic_informations_metadata": {
+            "nickname": "Apelido",
+            "name": "Nome",
+            "gender": "Gênero",
+            "date_birth": "Data de Nascimento",
+            "location": "Localização",
+            "height": "Altura",
+            "weight": "Peso",
+            "favorite_color": "Cor favorita",
+            "favorite_artists": "Artista favorito",
+            "favorite_bands": "Banda favorita",
+            "music_genres": "Gêneros musicais",
+            "literaly_genres": "Gêneros literários",
+            "preferred_language": "Linguagem favorita"
+        },
+        "basic_informations_data": {
+            "nickname": "Dama",
+            "name": "Laís",
+            "gender": "Feminino",
+            "date_birth": "Abril 9, 2001",
+            "location": "Brasil",
+            "height": "1.63",
+            "weight": "45.5kg",
+            "favorite_color": "Vermelho",
+            "favorite_artists": "Taylor Swift",
+            "favorite_bands": "Skillet",
+            "music_genres": ["pop", "rock", "alternativo"],
+            "literaly_genres": ["romance", "terror", "sci-fi"],
+            "preferred_language": "JavaScript"
+        },
+        "interests_and_hobbies": {
+            "title": "Interesses e Hobbies",
+            "description": "Destaco alguns hobbies e interesses que eu tenho e pratico!",
+            "switches": {
+                "color": "Cor",
+                "expand_all": "Expandir todos"
+            },
+            "hobbies": {
+                "programming": {
+                    "title": "Programar",
+                    "description": "Eu gosto de programar algo que tenho em mente nas minhas horas vagas, isso faz com que eu amplie meus conhecimentos na área."
+                },
+                "anime": {
+                    "title": "Anime",
+                    "description": "Gosto de assistir animes e ler mangás, admiro muito a cultura japonesa especialmente suas animações."
+                },
+                "cosplay": {
+                    "title": "Cosplay",
+                    "description": "Sempre que eu posso, eu gosto de me fantasiar de algum personagem que eu amo."
+                },
+                "create": {
+                    "title": "Criar",
+                    "description": "Eu sempre optei por criar modelos, desenhos, personagens, etc. de minha própria autoria ao invés de usar um que já existe."
+                },
+                "drawing": {
+                    "title": "Desenhar",
+                    "description": "Como principal hobbie, eu amo desenhar. Faz alguns anos que migrei para o desenho digital, pois antes eu tinha vários sketchbooks lotados de desenhos e rascunhos."
+                },
+                "edit": {
+                    "title": "Editar",
+                    "description": "Eu sempre amei editar fotos, montar banners e folders em programas de edição, especialmente o PhotoShop."
+                },
+                "games": {
+                    "title": "Games",
+                    "description": "Sempre busco uma boa jogatina quando chego do trabalho para relaxar. Jogos são coisas que me dão lazer."
+                },
+                "piano": {
+                    "title": "Piano",
+                    "description": "Gosto de tocar piano e violão, mas principalmente o piano. Ao tocá-lo, eu sempre sinto uma paz imensa."
+                },
+                "read": {
+                    "title": "Ler",
+                    "description": "Amo ler livros de ficção científica, sempre me abre a mente para um mundo cheio de imaginação!"
+                },
+                "writing": {
+                    "title": "Escrever",
+                    "description": "Eu amo escrever meus próprios livros e poesias, criar meus próprios personagens e postar para as pessoas notarem o mais incrível que consegui alcançar na minha imaginação!"
+                }
+            }
+        }
+    }
+}
