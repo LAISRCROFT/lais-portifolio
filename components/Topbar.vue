@@ -1,11 +1,11 @@
 <template>
     <div class="topbar" :class="{ 'colored-text': isScrolled }">
-      <Button :key="i18ControlCounter" :label="this.$i18n.topbar.home" class="buttons-menu d-none d-lg-block" />
+      <Button :key="i18ControlCounter" :label="this.$i18n.topbar.home" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_home')"/>
       <Button :key="i18ControlCounter" :label="this.$i18n.topbar.about" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_about')"/>
       <Button :key="i18ControlCounter" :label="this.$i18n.topbar.portfolio" class="buttons-menu d-none d-lg-block" />
       <Button :key="i18ControlCounter" :label="this.$i18n.topbar.contacts" class="buttons-menu d-none d-lg-block" />
       <button class="navbar-toggler menu-button-sidebar d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <i class="ri-menu-line menu-icon-sidebar"></i>
+        <i class="ri-menu-line menu-icon-sidebar" :class="{ 'colored-icon-sidebar': isScrolledIconSidebar }"></i>
       </button>
 
       <div 
@@ -52,7 +52,8 @@
         return {
           i18ControlCounter: 0,
           showSidebar: false,
-          isScrolled: false
+          isScrolled: false,
+          isScrolledIconSidebar: false
         };
       },
       watch: {
@@ -75,10 +76,11 @@
         },
         handleScroll() {
           // Define uma posição específica onde você deseja aplicar o estilo
-          const scrollThreshold = 870; // Por exemplo, 100px
+          const scrollThreshold = 850; // Por exemplo, 100px
           console.log(window.scrollY)
-          if (window.scrollY >= 870) console.log("S", scrollThreshold);
+          if (window.scrollY >= 850) console.log("S", scrollThreshold);
           this.isScrolled = window.scrollY >= scrollThreshold;
+          this.isScrolledIconSidebar = window.scrollY >= scrollThreshold
         }
       },
     }

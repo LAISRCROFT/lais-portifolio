@@ -5,11 +5,10 @@
     position: fixed;
     margin: auto;
     top: 0%;
-    padding-top: 1.5% !important;
     right: 0;
     left: 0;
     border-radius: 3px;
-    /* padding: 0px 4%; */
+    padding: 0% 4%;
     z-index: 1;
     background: transparent;
     .menu-button-sidebar {
@@ -19,7 +18,12 @@
             font-size: 2em;
             position: fixed;
             right: 3%;
+            top: 3%;
             mix-blend-mode: exclusion;
+            &.colored-icon-sidebar {
+                color: rgb(117 118 177);
+                font-weight: bold;
+            }
         }
     }
 
@@ -70,14 +74,13 @@
             box-shadow: none;
         }
     }
-    &.colored-text {
-        color: red; // Defina a cor desejada quando a classe é aplicada
-        background: #7576b185;
-    }
 }
 
 @media screen and (min-width: 992px) {
     .topbar {
-        padding: 0px 8%;
+        padding-top: 1.5% !important;
+        &.colored-text {
+            background: #7576b185;
+        }
     }
 }
