@@ -1,6 +1,6 @@
 <template>
     <div class="index row">
-        <div class="topo col-12">
+        <div class="topo col-12" id="section_home">
             <div>
                 <TopbarDropdown @localizationChanged='localizationChanged' />
                 <Topbar :i18Controller='i18Controll' />
