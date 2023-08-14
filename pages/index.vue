@@ -1,10 +1,10 @@
 <template>
     <div class="index row">
+        <div>
+            <TopbarDropdown @localizationChanged='localizationChanged' />
+            <Topbar :i18Controller='i18Controll' :color="isDivVisible" class="topbar-target"/>
+        </div>
         <div class="topo col-12" id="section_home">
-            <div>
-                <TopbarDropdown @localizationChanged='localizationChanged' />
-                <Topbar :i18Controller='i18Controll' />
-            </div>
             <div class="row w-100 text-center row-dama-title d-flex justify-content-center">
                 <div class="col-12 col-dama-title">
                     <h1 class="dama-title">Dama</h1>
@@ -27,11 +27,16 @@ export default {
     data() {
         return {
             i18Controll: 0,
-            selectedOption: ''
+            selectedOption: '',
+            isDivVisible: false
         };
     },
     mounted() {
         this.typeWriterEffect()
+        window.addEventListener("scroll", this.checkDivVisibility);
+    },
+    beforeDestroy() {
+        window.removeEventListener("scroll", this.checkDivVisibility);
     },
     async created() {
         eventBus.$on('att-idioma', async(option) => {
@@ -60,6 +65,13 @@ export default {
             .pauseFor(1000)
             .start();
         },
+        checkDivVisibility() {
+            const targetDiv = document.querySelector(".topo");
+            if (!targetDiv) return;
+            const targetDivPosition = targetDiv.getBoundingClientRect();
+            let height = targetDivPosition.height-(targetDivPosition.height*0.1)
+            this.isDivVisible = window.scrollY >= height;
+        }
     },
     watch: {
         
