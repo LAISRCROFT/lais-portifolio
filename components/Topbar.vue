@@ -1,5 +1,5 @@
 <template>
-    <div class="topbar" :class="{ 'colored-text': isScrolled }">
+    <div class="topbar" :class="{ 'colored-text': color  }">
       <Button :key="i18ControlCounter" :label="this.$i18n.topbar.home" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_home')"/>
       <Button :key="i18ControlCounter" :label="this.$i18n.topbar.about" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_about')"/>
       <Button :key="i18ControlCounter" :label="this.$i18n.topbar.portfolio" class="buttons-menu d-none d-lg-block" />
@@ -47,25 +47,29 @@
   <script>
     export default {
       name: 'Topbar',
-      props: ['i18Controller'],
+      props: ['i18Controller', 'color'],
       data() {
         return {
           i18ControlCounter: 0,
           showSidebar: false,
           isScrolled: false,
-          isScrolledIconSidebar: false
+          isScrolledIconSidebar: false,
+          color: false
         };
       },
       watch: {
         i18Controller(){
           this.i18ControlCounter++;
+        },
+        color() {
+          
         }
       },
       mounted() {
-        window.addEventListener("scroll", this.handleScroll);
+        
       },
       beforeDestroy() {
-        window.removeEventListener("scroll", this.handleScroll);
+        
       },
       methods: {
         scrollToSection(sectionId) {
@@ -74,14 +78,6 @@
             element.scrollIntoView({ behavior: 'smooth' });
           }
         },
-        handleScroll() {
-          // Define uma posição específica onde você deseja aplicar o estilo
-          const scrollThreshold = 850; // Por exemplo, 100px
-          console.log(window.scrollY)
-          if (window.scrollY >= 850) console.log("S", scrollThreshold);
-          this.isScrolled = window.scrollY >= scrollThreshold;
-          this.isScrolledIconSidebar = window.scrollY >= scrollThreshold
-        }
       },
     }
   </script>
