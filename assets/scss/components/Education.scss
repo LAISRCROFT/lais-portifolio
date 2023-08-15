@@ -1,0 +1,55 @@
+.education {
+    background: linear-gradient(280deg, #b8b8e8 0%, #f1f1f9 100%);
+    padding-top: 3%;
+    .h2-title {
+        text-align: center;
+        color: #4a4a8d8f;
+        letter-spacing: 8px;
+    }
+    .customized-timeline {
+        .card-timeline {
+            box-shadow: 8px 7px 18px 0px #b8b8e8;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            &:hover {
+                animation: 500ms;
+                background-color: #f2f2ff;
+            }
+        }
+    }
+    .custom-marker {
+        display: flex;
+        width: 2rem;
+        height: 2rem;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    :deep(.p-timeline-event-content),
+    :deep(.p-timeline-event-opposite) {
+        line-height: 1;
+    }
+
+    @media screen and (max-width: 960px) {
+        :deep(.customized-timeline) {
+                .p-timeline-event:nth-child(even) {
+                    flex-direction: row !important;
+
+                    .p-timeline-event-content {
+                        text-align: left !important;
+                    }
+                }
+
+                .p-timeline-event-opposite {
+                    flex: 0;
+                }
+
+                .p-card {
+                    margin-top: 1rem;
+                }
+            }
+    }
+}

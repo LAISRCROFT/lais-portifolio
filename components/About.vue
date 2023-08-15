@@ -93,11 +93,10 @@
                 <Hobbies />
             </div>
         </div>
-      
     </div>
-  </template>
-  
-  <script>
+</template>
+
+<script>
     import eventBus from '../plugins/eventBus';
 
     export default {
@@ -206,7 +205,7 @@
             }
         }
     }
-  </script>
+</script>
   
 <style lang="scss">
 @import '~/assets/scss/components/About.scss';

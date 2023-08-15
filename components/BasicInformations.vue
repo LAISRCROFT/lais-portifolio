@@ -70,9 +70,9 @@
             </div>
         <!-- </p> -->
     </div>
-  </template>
+</template>
   
-  <script>
+<script>
     import eventBus from '../plugins/eventBus';
     export default {
         name: 'Hobbies',
@@ -98,9 +98,9 @@
         mounted() {
         }
     }
-  </script>
+</script>
   
-<style lang="scss">
+<style lang="scss" scoped>
 @import '~/assets/scss/components/About.scss';
 
 .custom-chip {

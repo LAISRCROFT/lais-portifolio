@@ -41,7 +41,7 @@
   }
 </script>
   
-<style lang="scss">
+<style lang="scss" scoped>
 @import '~/assets/scss/components/Topbar_Dropdown.scss';
 
 </style>

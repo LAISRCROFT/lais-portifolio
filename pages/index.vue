@@ -14,6 +14,7 @@
             </div>
         </div>
         <About id="section_about" />
+        <Education id="section_education" />
     </div>
     <!-- <div>
         <TypeWriter />
