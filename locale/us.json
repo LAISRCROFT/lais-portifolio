@@ -2,6 +2,7 @@
     "topbar": {
         "home": "Home",
         "about": "About",
+        "education": "Education",
         "portfolio": "Portfolio",
         "contacts": "Contacts"
     },

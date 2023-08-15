@@ -2,7 +2,8 @@
     <div class="topbar" :class="{ 'colored-text': color  }">
       <Button :key="i18ControlCounter" :label="this.$i18n.topbar.home" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_home')"/>
       <Button :key="i18ControlCounter" :label="this.$i18n.topbar.about" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_about')"/>
-      <Button :key="i18ControlCounter" :label="this.$i18n.topbar.portfolio" class="buttons-menu d-none d-lg-block" />
+      <Button :key="i18ControlCounter" :label="this.$i18n.topbar.education" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_education')"/>
+      <Button :key="i18ControlCounter" :label="this.$i18n.topbar.portfolio" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_portfolio')"/>
       <Button :key="i18ControlCounter" :label="this.$i18n.topbar.contacts" class="buttons-menu d-none d-lg-block" />
       <button class="navbar-toggler menu-button-sidebar d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <i class="ri-menu-line menu-icon-sidebar" :class="{ 'colored-icon-sidebar': isScrolledIconSidebar }"></i>
@@ -40,11 +41,9 @@
           </ul>
         </div>
       </div>
-
     </div>
-  </template>
-  
-  <script>
+</template>
+<script>
     export default {
       name: 'Topbar',
       props: ['i18Controller', 'color'],
@@ -80,9 +79,9 @@
         },
       },
     }
-  </script>
+</script>
   
-<style lang="scss">
+<style lang="scss" scoped>
 @import '~/assets/scss/components/Topbar.scss';
 
 </style>
