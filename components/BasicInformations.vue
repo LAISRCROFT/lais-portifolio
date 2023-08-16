@@ -83,11 +83,9 @@
         },
         async created() {
             this.i18n = this.$i18n.about
-            console.log("this.$i18n.about: ", this.$i18n.about)
             eventBus.$on('att-idioma', async(option) => {
                 this.selectedOption = option;
                 setTimeout(() => {
-                    console.log("this.$i18n.about: ", this.$i18n.about)
                     this.i18n = this.$i18n.about
                 }, 500)
             });

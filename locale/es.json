@@ -96,5 +96,55 @@
                 }
             }
         }
+    },
+    "education": {
+        "title": "Formación",
+        "formacoes": [
+            {
+                "title": "ETEC de Sapopemba", 
+                "data_inicial": "02/2018", 
+                "data_final": "06/2019", 
+                "curso": "Técnico en informática", 
+                "icon": "pi pi-circle-on", 
+                "color": "#7576b1",
+                "descricao": "Me gradué como Técnico en Computación en la Escuela Técnica ETEC en Sapopemba. Aprendí varias áreas de la computación, desde hardware (ensamblaje de computadoras, redes e infraestructura) hasta software (programación web y de escritorio, bases de datos y aplicaciones móviles)"
+            },
+            {
+                "title": "SAGA", 
+                "data_inicial": "09/2019", 
+                "data_final": "10/2019", 
+                "curso": "Oficina Unreal Engine", 
+                "icon": "pi pi-circle-on", 
+                "color": "#7576b1",
+                "descricao": "Tenía curiosidad por entender cómo funciona la parte de diseño de juegos e hice un taller en la escuela de arte SAGA y me gustó mucho cómo funciona la creación y desarrollo de juegos a través de la plataforma Unreal Engine."
+            },
+            {
+                "title": "UNINOVE", 
+                "data_inicial": "02/2021", 
+                "data_final": "12/2024", 
+                "curso": "Licenciatura en Informática", 
+                "icon": "pi pi-circle-on", "color": "#7576b1", 
+                "image": "game-controller.jpg",
+                "descricao": "Decidí iniciar una carrera en el área de computación y seguir una carrera profesional en TI. Estoy desarrollando y mejorando habilidades en infraestructura, pero principalmente en programación."
+            },
+            {
+                "title": "CISCO Academy", 
+                "data_inicial": "02/2021", 
+                "data_final": "06/2021", 
+                "curso": "Network Essencials Redes de Computadores", 
+                "icon": "pi pi-circle-on", "color": "#7576b1", 
+                "image": "game-controller.jpg",
+                "descricao": "En uno de los semestres de la UNINOVE, tomé un curso de Redes de Computadores en la Academia CISCO, lo que me sumó conocimientos en redes y me ayudó con el soporte donde trabajaba en ese momento."
+            },
+            {
+                "title": "CISCO Academy", 
+                "data_inicial": "08/2022", 
+                "data_final": "12/2022", 
+                "curso": "Cybersecurity Essecials", 
+                "icon": "pi pi-circle-on", "color": "#7576b1", 
+                "image": "game-controller.jpg",
+                "descricao": "En uno de los semestres de UNINOVE, realicé un curso de Seguridad de la Información en la academia CISCO, lo que me ayudó a ser más consciente de la seguridad de los sistemas y a aplicar lo aprendido en el desarrollo de mis proyectos."
+            }
+        ]
     }
 }
