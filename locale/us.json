@@ -108,7 +108,12 @@
                 "curso": "Computer Technician", 
                 "icon": "pi pi-circle-on", 
                 "color": "#7576b1",
-                "descricao": "I graduated as a Computer Technician at the ETEC Technical School in Sapopemba. I learned several areas of computing, from hardware (computer assembly, networks and infrastructure) to software (web and desktop programming, databases and mobile applications"
+                "descricao": "I graduated as a Computer Technician at the ETEC Technical School in Sapopemba. I learned several areas of computing, from hardware (computer assembly, networks and infrastructure) to software (web and desktop programming, databases and mobile applications",
+                "certificados": [
+                    "Technical certificate of completion",
+                    "Most Ethical Student Certificate",
+                    "Technical Conversation Simulation"
+                ]
             },
             {
                 "title": "SAGA", 
@@ -117,7 +122,10 @@
                 "curso": "Unreal Engine Workshop", 
                 "icon": "pi pi-circle-on", 
                 "color": "#7576b1",
-                "descricao": "I was curious to understand how the game design part works and I did a workshop on the SAGA art school and I really liked how the creation and development of games works through the Unreal Engine platform."
+                "descricao": "I was curious to understand how the game design part works and I did a workshop on the SAGA art school and I really liked how the creation and development of games works through the Unreal Engine platform.",
+                "certificados": [
+                    "Certificate of completion"
+                ]
             },
             {
                 "title": "UNINOVE", 
@@ -126,7 +134,10 @@
                 "curso": "Bachelor's Degree in Computer Science", 
                 "icon": "pi pi-circle-on", "color": "#7576b1", 
                 "image": "game-controller.jpg",
-                "descricao": "I decided to start college in the computing area and pursue a professional career in IT. I'm developing and improving skills in infrastructure, but mainly programming."
+                "descricao": "I decided to start college in the computing area and pursue a professional career in IT. I'm developing and improving skills in infrastructure, but mainly programming.",
+                "certificados": [
+
+                ]
             },
             {
                 "title": "CISCO Academy", 
@@ -135,21 +146,33 @@
                 "curso": "Network Essencials Computer network", 
                 "icon": "pi pi-circle-on", "color": "#7576b1", 
                 "image": "game-controller.jpg",
-                "descricao": "In one of the semesters at UNINOVE, I took a course on Computer Networks at the CISCO Academy, which added knowledge in networks and helped me with the support where I worked at the time."
+                "descricao": "In one of the semesters at UNINOVE, I took a course on Computer Networks at the CISCO Academy, which added knowledge in networks and helped me with the support where I worked at the time.",
+                "certificados": [
+                    "Certificate of completion"
+                ]
             },
             {
                 "title": "CISCO Academy", 
                 "data_inicial": "08/2022", 
                 "data_final": "12/2022", 
-                "curso": "Cybersecurity Essecials", 
+                "curso": "Cybersecurity Essencials", 
                 "icon": "pi pi-circle-on", "color": "#7576b1", 
                 "image": "game-controller.jpg",
-                "descricao": "In one of the semesters at UNINOVE, I took a course on Information Security at the CISCO academy, which helped me to be more aware of systems security and to apply what I had learned in the development of my projects."
+                "descricao": "In one of the semesters at UNINOVE, I took a course on Information Security at the CISCO academy, which helped me to be more aware of systems security and to apply what I had learned in the development of my projects.",
+                "certificados": [
+                    "Certificate of completion",
+                    "Badge Cybersecurity Essentials"
+                ]
             }
         ]
     },
     "experiences": {
         "title": "Experiences",
+        "labels": {
+            "funcoes": "Functions",
+            "aprendizado": "Learned",
+            "comentario": "Comment"
+        },
         "experiences": [
             {
                 "title": "CNK Salgados",

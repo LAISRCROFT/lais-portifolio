@@ -14,7 +14,7 @@
                     <TabPanel>
                         <template #header>
                             <i class="pi pi-sitemap"></i>
-                            <span>Funções</span>
+                            <span>{{ i18n.labels.funcoes }}</span>
                         </template>
                         <div class="div-chip-experiences-funcoes" v-for="(funcao, index) in exp.funcoes" :key="index">
                             <Chip :label="funcao" icon="pi pi-circle-on" class="mr-5 mb-2 chip-experiences-funcoes"/>
@@ -22,7 +22,7 @@
                     </TabPanel>
                     <TabPanel>
                         <template #header>
-                            <span>Aprendizado</span>
+                            <span>{{ i18n.labels.aprendizado }}</span>
                             <i class="pi pi-star-fill"></i>
                         </template>
                         <div class="row experiences-aprendizado" v-for="(skill, index) in exp.aprendizado" :key="index">
@@ -36,7 +36,7 @@
                     </TabPanel>
                     <TabPanel>
                         <template #header>
-                            <span>Comentário</span>
+                            <span>{{ i18n.labels.comentario }}</span>
                             <i class="pi pi-bars"></i>
                         </template>
                         <p>{{ exp.comentario.comentario }}</p>

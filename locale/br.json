@@ -108,7 +108,12 @@
                 "curso": "Técnico em Informática", 
                 "icon": "pi pi-circle-on", 
                 "color": "#7576b1",
-                "descricao": "Formei-me em Técnico de Informática pela Escola Técnica ETEC de Sapopemba. Aprendi diversas áreas da informática, desde hardware (montagem de computadores, redes e infraestrutura) até software (programação para web e desktop, banco de dados e aplicações para mobile."
+                "descricao": "Formei-me em Técnico de Informática pela Escola Técnica ETEC de Sapopemba. Aprendi diversas áreas da informática, desde hardware (montagem de computadores, redes e infraestrutura) até software (programação para web e desktop, banco de dados e aplicações para mobile.",
+                "certificados": [
+                    "Certificado técnico de conclusão",
+                    "Certificado de aluna mais ética",
+                    "Simulação de conversação técnica"
+                ]
             },
             {
                 "title": "SAGA", 
@@ -117,7 +122,10 @@
                 "curso": "Oficina Unreal Engine", 
                 "icon": "pi pi-circle-on", 
                 "color": "#7576b1",
-                "descricao": "Tive a curiosidade em entender como funciona a parte de design de games e fiz uma oficina sobre pela escola de artes SAGA e gostei bastante de como funciona a criação e desenvolvimento de games pela plataforma Unreal Engine."
+                "descricao": "Tive a curiosidade em entender como funciona a parte de design de games e fiz uma oficina sobre pela escola de artes SAGA e gostei bastante de como funciona a criação e desenvolvimento de games pela plataforma Unreal Engine.",
+                "certificados": [
+                    "Certificado de conclusão"
+                ]
             },
             {
                 "title": "UNINOVE", 
@@ -126,7 +134,10 @@
                 "curso": "Bacharelado em Ciência da Computação", 
                 "icon": "pi pi-circle-on", "color": "#7576b1", 
                 "image": "game-controller.jpg",
-                "descricao": "Decidi começar uma faculdade na área de computação e seguir com a carreira profissional em TI. Estou desenvolvendo e aperfeiçoando habilidades em infra, mas principalmente programação."
+                "descricao": "Decidi começar uma faculdade na área de computação e seguir com a carreira profissional em TI. Estou desenvolvendo e aperfeiçoando habilidades em infra, mas principalmente programação.",
+                "certificados": [
+                    
+                ]
             },
             {
                 "title": "CISCO Academy", 
@@ -135,21 +146,33 @@
                 "curso": "Network Essencials Redes de Computadores", 
                 "icon": "pi pi-circle-on", "color": "#7576b1", 
                 "image": "game-controller.jpg",
-                "descricao": "Em um dos semestres da UNINOVE, fiz um curso sobre Rede de Computadores pela CISCO Academy, o que me agregou conhecimentos em redes e me ajudou com o suporte aonde eu trabalhava na época."
+                "descricao": "Em um dos semestres da UNINOVE, fiz um curso sobre Rede de Computadores pela CISCO Academy, o que me agregou conhecimentos em redes e me ajudou com o suporte aonde eu trabalhava na época.",
+                "certificados": [
+                    "Certificado de conclusão"
+                ]
             },
             {
                 "title": "CISCO Academy", 
                 "data_inicial": "08/2022", 
                 "data_final": "12/2022", 
-                "curso": "Cybersecurity Essecials", 
+                "curso": "Cybersecurity Essencials", 
                 "icon": "pi pi-circle-on", "color": "#7576b1", 
                 "image": "game-controller.jpg",
-                "descricao": "Em um dos semestres da UNINOVE, fiz um curso sobre Segurança da Informação pela CISCO academy, o que me ajudou a ter mais noção sobre a segurança de sistemas e aplicar o aprendizado no desenvolvimento dos meus projetos."
+                "descricao": "Em um dos semestres da UNINOVE, fiz um curso sobre Segurança da Informação pela CISCO academy, o que me ajudou a ter mais noção sobre a segurança de sistemas e aplicar o aprendizado no desenvolvimento dos meus projetos.",
+                "certificados": [
+                    "Certificado de conclusão",
+                    "Bagde Cybersecurity Essentials"
+                ]
             }
         ]
     },
     "experiences": {
         "title": "Experiências",
+        "labels": {
+            "funcoes": "Funções",
+            "aprendizado": "Aprendizado",
+            "comentario": "Comentário"
+        },
         "experiences": [
             {
                 "title": "CNK Salgados",
