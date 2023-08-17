@@ -17,6 +17,8 @@
                         <Card class="card-timeline">
                             <template #title>
                                 {{slotProps.item.title}}
+                                <i class="pi pi-bookmark-fill certificados-icon" v-tooltip.top="icon" v-for="(icon, i) in slotProps.item.certificados"></i>
+                                <!-- {{ slotProps.item.certificados }} -->
                             </template>
                             <template #subtitle>
                                 <p class="subtitle-education">
@@ -25,7 +27,6 @@
                                 </p>
                             </template>
                             <template #content>
-                                <!-- <img v-if="slotProps.item.image" :src="'demo/images/product/' + slotProps.item.image" :alt="slotProps.item.name" width="200" class="shadow-2" /> -->
                                 <p class="descricao-education">
                                     {{ slotProps.item.descricao }}
                                 </p>
@@ -50,53 +51,7 @@
         },
         async created() {
             this.i18n = this.$i18n.education
-            this.formacoes = [
-                {
-                    "title": "ETEC de Sapopemba", 
-                    "data_inicial": "02/2018", 
-                    "data_final": "06/2019", 
-                    "curso": "Computer Technician", 
-                    "icon": "pi pi-circle-on", 
-                    "color": "#7576b1",
-                    "descricao": "I graduated as a Computer Technician at the ETEC Technical School in Sapopemba. I learned several areas of computing, from hardware (computer assembly, networks and infrastructure) to software (web and desktop programming, databases and mobile applications"
-                },
-                {
-                    "title": "SAGA", 
-                    "data_inicial": "09/2019", 
-                    "data_final": "10/2019", 
-                    "curso": "Unreal Engine Workshop", 
-                    "icon": "pi pi-circle-on", 
-                    "color": "#7576b1",
-                    "descricao": "I was curious to understand how the game design part works and I did a workshop on the SAGA art school and I really liked how the creation and development of games works through the Unreal Engine platform."
-                },
-                {
-                    "title": "UNINOVE", 
-                    "data_inicial": "02/2021", 
-                    "data_final": "12/2024", 
-                    "curso": "Bachelor's Degree in Computer Science", 
-                    "icon": "pi pi-circle-on", "color": "#7576b1", 
-                    "image": "game-controller.jpg",
-                    "descricao": "I decided to start college in the computing area and pursue a professional career in IT. I'm developing and improving skills in infrastructure, but mainly programming."
-                },
-                {
-                    "title": "CISCO Academy", 
-                    "data_inicial": "02/2021", 
-                    "data_final": "06/2021", 
-                    "curso": "Network Essencials Computer network", 
-                    "icon": "pi pi-circle-on", "color": "#7576b1", 
-                    "image": "game-controller.jpg",
-                    "descricao": "In one of the semesters at UNINOVE, I took a course on Computer Networks at the CISCO Academy, which added knowledge in networks and helped me with the support where I worked at the time."
-                },
-                {
-                    "title": "CISCO Academy", 
-                    "data_inicial": "08/2022", 
-                    "data_final": "12/2022", 
-                    "curso": "Cybersecurity Essecials", 
-                    "icon": "pi pi-circle-on", "color": "#7576b1", 
-                    "image": "game-controller.jpg",
-                    "descricao": "In one of the semesters at UNINOVE, I took a course on Information Security at the CISCO academy, which helped me to be more aware of systems security and to apply what I had learned in the development of my projects."
-                }
-            ]
+            this.formacoes = this.$i18n.education.formacoes
 
             eventBus.$on('att-idioma', async(option) => {
                 this.selectedOption = option;
@@ -104,6 +59,7 @@
                     console.log("education: ", this.$i18n.education)
                     this.i18n = this.$i18n.education
                     this.formacoes = this.$i18n.education.formacoes
+                    console.log(this.formacoes)
                 }, 500)
             });
         },
