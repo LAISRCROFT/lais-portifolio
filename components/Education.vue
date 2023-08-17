@@ -5,8 +5,8 @@
                 <h2 class="h2-title">{{ i18n.title }}</h2>
             </div>
         </div>
-        <div class="row flex align-items-center justify-content-center">
-            <div class="col-12 col-md-8 flex align-items-center justify-content-center">
+        <div class="row flex align-items-center justify-content-center mb-5">
+            <div class="col-12 col-md-8 flex align-items-center justify-content-center mb-5">
                 <Timeline :value="formacoes" align="alternate" class="customized-timeline">
                     <template #marker="slotProps">
                         <span class="custom-marker shadow-2" :style="{backgroundColor: slotProps.item.color}">
@@ -19,12 +19,14 @@
                                 {{slotProps.item.title}}
                             </template>
                             <template #subtitle>
-                                {{ slotProps.item.curso }} <br />
-                                {{slotProps.item.data_inicial}} - {{slotProps.item.data_final}}
+                                <p class="subtitle-education">
+                                    {{ slotProps.item.curso }} <br />
+                                    {{slotProps.item.data_inicial}} - {{slotProps.item.data_final}}
+                                </p>
                             </template>
                             <template #content>
                                 <!-- <img v-if="slotProps.item.image" :src="'demo/images/product/' + slotProps.item.image" :alt="slotProps.item.name" width="200" class="shadow-2" /> -->
-                                <p>
+                                <p class="descricao-education">
                                     {{ slotProps.item.descricao }}
                                 </p>
                             </template>

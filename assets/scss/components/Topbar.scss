@@ -11,6 +11,8 @@
     padding: 0% 4%;
     z-index: 2;
     background: transparent;
+    height: 8.5% !important;
+    padding-top: 1.5%;
     .menu-button-sidebar {
         .menu-icon-sidebar {
             cursor: pointer;
@@ -74,6 +76,15 @@
             box-shadow: none;
         }
     }
+
+    // &.colored-topbar {
+    //     height: 8.5%;
+    //     display: block;
+    // }
+
+    &.colored-text {
+        background: #7576b185;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -82,5 +93,9 @@
         &.colored-text {
             background: #7576b185;
         }
+        // &.colored-topbar {
+        //     height: 1.5%;
+        //     display: none;
+        // }
     }
 }

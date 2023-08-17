@@ -21,6 +21,11 @@
                 /* border: solid 2px #000; */
                 border-radius: 100%;
                 cursor: pointer;
+                transition: background-color 0.3s ease, width 0.3s ease;
+                &:hover {
+                    background-color: #e2e2ff;
+                    width: 25%;
+                }
             }
             .title-divider {
                 background: #FFF;
@@ -30,6 +35,10 @@
             .imagens-icons-png {
                 width: 74%;
                 cursor: pointer;
+                transition: width 0.3s ease;
+                &:hover {
+                    width: 25%;
+                }
             }
         }
         .p-divider.p-divider-horizontal:before {

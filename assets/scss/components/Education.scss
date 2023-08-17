@@ -16,6 +16,13 @@
                 animation: 500ms;
                 background-color: #f2f2ff;
             }
+            .subtitle-education {
+                letter-spacing: 1px;
+            }
+            .descricao-education {
+                letter-spacing: 1px;
+                line-height: 19px;
+            }
         }
     }
     .custom-marker {
@@ -27,6 +34,11 @@
         color: #ffffff;
         border-radius: 50%;
         z-index: 1;
+        transition: color 0.2s ease;
+        cursor: pointer;
+        &:hover {
+            color: #2a2b4d;
+        }
     }
 
     :deep(.p-timeline-event-content),
