@@ -27,6 +27,8 @@ import TabPanel from 'primevue/tabpanel';
 import ProgressBar from 'primevue/progressbar';
 import Rating from 'primevue/rating';
 import Tooltip from 'primevue/tooltip';
+import Badge from 'primevue/badge';
+import BadgeDirective from 'primevue/badgedirective';
 
 Vue.use(PrimeVue);
 Vue.component('Button', Button);
@@ -56,5 +58,8 @@ Vue.component('TabPanel', TabPanel);
 Vue.component('ProgressBar', ProgressBar);
 Vue.component('Rating', Rating);
 Vue.component('Tooltip', Tooltip);
+Vue.component('Badge', Badge);
+Vue.component('BadgeDirective', BadgeDirective);
 
 Vue.directive('tooltip', Tooltip);
+Vue.directive('badge', Badge);

@@ -57,43 +57,83 @@
             "hobbies": {
                 "programming": {
                     "title": "Programming",
-                    "description": "I like to program something I have in mind in my spare time, it makes me expand my knowledge in the area."
+                    "description": "I like to program something I have in mind in my spare time, it makes me expand my knowledge in the area.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "anime": {
                     "title": "Anime",
-                    "description": "I like to watch anime and read manga, I really admire Japanese culture especially their animations."
+                    "description": "I like to watch anime and read manga, I really admire Japanese culture especially their animations.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "cosplay": {
                     "title": "Cosplay",
-                    "description": "Whenever I can, I like to dress up as a character I love."
+                    "description": "Whenever I can, I like to dress up as a character I love.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "create": {
                     "title": "Create",
-                    "description": "I always chose to create models, drawings, characters, etc. of my own creation rather than using one that already exists."
+                    "description": "I always chose to create models, drawings, characters, etc. of my own creation rather than using one that already exists.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "drawing": {
                     "title": "Drawing",
-                    "description": "As my main hobby, I love to draw. A few years ago I migrated to digital drawing, because before that I had several sketchbooks full of drawings and drafts."
+                    "description": "As my main hobby, I love to draw. A few years ago I migrated to digital drawing, because before that I had several sketchbooks full of drawings and drafts.",
+                    "content": {
+                        "view": true,
+                        "description": "View my gallery"
+                    }
                 },
                 "edit": {
                     "title": "Edit",
-                    "description": "I've always loved editing photos, putting together banners and folders in editing programs, especially PhotoShop."
+                    "description": "I've always loved editing photos, putting together banners and folders in editing programs, especially PhotoShop.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "games": {
                     "title": "Games",
-                    "description": "I always look for a good game when I get home from work to relax. Games are things that give me pleasure."
+                    "description": "I always look for a good game when I get home from work to relax. Games are things that give me pleasure.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "piano": {
                     "title": "Piano",
-                    "description": "I like to play the piano and the guitar, but mainly the piano. When I touch him, I always feel immense peace."
+                    "description": "I like to play the piano and the guitar, but mainly the piano. When I touch him, I always feel immense peace.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "read": {
                     "title": "Read",
-                    "description": "I love reading science fiction books, it always opens my mind to a world full of imagination!"
+                    "description": "I love reading science fiction books, it always opens my mind to a world full of imagination!",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "writing": {
                     "title": "Writing",
-                    "description": "I love to write my own books and poems, create my own characters and post them for people to notice the most amazing things I could achieve in my imagination!"
+                    "description": "I love to write my own books and poems, create my own characters and post them for people to notice the most amazing things I could achieve in my imagination!",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 }
             }
         }
@@ -171,7 +211,7 @@
         "labels": {
             "funcoes": "Functions",
             "aprendizado": "Learned",
-            "comentario": "Comment"
+            "comentario": "Comentario"
         },
         "experiences": [
             {

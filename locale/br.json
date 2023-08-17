@@ -57,43 +57,83 @@
             "hobbies": {
                 "programming": {
                     "title": "Programar",
-                    "description": "Eu gosto de programar algo que tenho em mente nas minhas horas vagas, isso faz com que eu amplie meus conhecimentos na área."
+                    "description": "Eu gosto de programar algo que tenho em mente nas minhas horas vagas, isso faz com que eu amplie meus conhecimentos na área.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "anime": {
                     "title": "Anime",
-                    "description": "Gosto de assistir animes e ler mangás, admiro muito a cultura japonesa especialmente suas animações."
+                    "description": "Gosto de assistir animes e ler mangás, admiro muito a cultura japonesa especialmente suas animações.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "cosplay": {
                     "title": "Cosplay",
-                    "description": "Sempre que eu posso, eu gosto de me fantasiar de algum personagem que eu amo."
+                    "description": "Sempre que eu posso, eu gosto de me fantasiar de algum personagem que eu amo.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "create": {
                     "title": "Criar",
-                    "description": "Eu sempre optei por criar modelos, desenhos, personagens, etc. de minha própria autoria ao invés de usar um que já existe."
+                    "description": "Eu sempre optei por criar modelos, desenhos, personagens, etc. de minha própria autoria ao invés de usar um que já existe.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "drawing": {
                     "title": "Desenhar",
-                    "description": "Como principal hobbie, eu amo desenhar. Faz alguns anos que migrei para o desenho digital, pois antes eu tinha vários sketchbooks lotados de desenhos e rascunhos."
+                    "description": "Como principal hobbie, eu amo desenhar. Faz alguns anos que migrei para o desenho digital, pois antes eu tinha vários sketchbooks lotados de desenhos e rascunhos.",
+                    "content": {
+                        "view": true,
+                        "description": "Ver minha galeria"
+                    }
                 },
                 "edit": {
                     "title": "Editar",
-                    "description": "Eu sempre amei editar fotos, montar banners e folders em programas de edição, especialmente o PhotoShop."
+                    "description": "Eu sempre amei editar fotos, montar banners e folders em programas de edição, especialmente o PhotoShop.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "games": {
                     "title": "Games",
-                    "description": "Sempre busco uma boa jogatina quando chego do trabalho para relaxar. Jogos são coisas que me dão lazer."
+                    "description": "Sempre busco uma boa jogatina quando chego do trabalho para relaxar. Jogos são coisas que me dão lazer.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "piano": {
                     "title": "Piano",
-                    "description": "Gosto de tocar piano e violão, mas principalmente o piano. Ao tocá-lo, eu sempre sinto uma paz imensa."
+                    "description": "Gosto de tocar piano e violão, mas principalmente o piano. Ao tocá-lo, eu sempre sinto uma paz imensa.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "read": {
                     "title": "Ler",
-                    "description": "Amo ler livros de ficção científica, sempre me abre a mente para um mundo cheio de imaginação!"
+                    "description": "Amo ler livros de ficção científica, sempre me abre a mente para um mundo cheio de imaginação!",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "writing": {
                     "title": "Escrever",
-                    "description": "Eu amo escrever meus próprios livros e poesias, criar meus próprios personagens e postar para as pessoas notarem o mais incrível que consegui alcançar na minha imaginação!"
+                    "description": "Eu amo escrever meus próprios livros e poesias, criar meus próprios personagens e postar para as pessoas notarem o mais incrível que consegui alcançar na minha imaginação!",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 }
             }
         }
