@@ -2,8 +2,9 @@
     "topbar": {
         "home": "Home",
         "about": "Acerca de",
-        "portfolio": "portafolio",
         "education": "Formación",
+        "experiences": "Experiencias",
+        "portfolio": "portafolio",
         "contacts": "contactos"
     },
     "home": {
@@ -144,6 +145,128 @@
                 "icon": "pi pi-circle-on", "color": "#7576b1", 
                 "image": "game-controller.jpg",
                 "descricao": "En uno de los semestres de UNINOVE, realicé un curso de Seguridad de la Información en la academia CISCO, lo que me ayudó a ser más consciente de la seguridad de los sistemas y a aplicar lo aprendido en el desarrollo de mis proyectos."
+            }
+        ]
+    },
+    "experiences": {
+        "title": "Experiencias",
+        "experiences": [
+            {
+                "title": "CNK Salgados",
+                "cargo": "Asistente",
+                "datas": ["06/2019", "12/2029"],
+                "localidade": "Brasil",
+                "funcoes": [
+                    "Organización",
+                    "Limpieza",
+                    "Atención al cliente"
+                ],
+                "aprendizado": [
+                    {
+                        "title": "Servicio al cliente",
+                        "score": 70
+                    },
+                    {
+                        "title": "Conversación",
+                        "score": 30
+                    }
+                ],
+                "comentario": {
+                    "comentario": "Esta fue mi primera experiencia en el mercado laboral, y desarrollé mejor mi interacción con las personas y mi sentido del trabajo. Fue muy bueno para mí.",
+                    "rating": 4
+                }
+            },
+            {
+                "title": "Potencial Loterias",
+                "cargo": "Soporte Técnico",
+                "datas": ["12/2019", "07/2021"],
+                "localidade": "Brasil",
+                "funcoes": [
+                    "Soporte al usuario",
+                    "Mantenimiento de Micros",
+                    "Mantenimiento de equipos",
+                    "Formateo de computadoras",
+                    "Configuración de equipos (impresoras, pinpads, lectores ópticos, cámaras de seguridad, etc.)",
+                    "Instalación del sistema",
+                    "Intercambio de equipos",
+                    "Pruebas del sistema"
+                ],
+                "aprendizado": [
+                    {
+                        "title": "Soporte al usuario",
+                        "score": 70
+                    },
+                    {
+                        "title": "Conversación",
+                        "score": 70
+                    },
+                    {
+                        "title": "Relación interpersonal",
+                        "score": 80
+                    },
+                    {
+                        "title": "Hardware y componentes",
+                        "score": 75
+                    },
+                    {
+                        "title": "Mantenimiento de computadoras",
+                        "score": 60
+                    }
+                ],
+                "comentario": {
+                    "comentario": "Esta fue mi primera experiencia en el área de TI, y fue muy útil para las relaciones interpersonales e interacciones con el usuario, ya que tenía que estar en contacto constante con ellos. Desarrollé la parte técnica de mantenimiento de computadoras y equipo muy bien. Fue agotador, ¡pero valió la pena aprender!",
+                    "rating": 3
+                }
+            },
+            {
+                "title": "Potencial Tecnologia",
+                "cargo": "Desarrollador Junior",
+                "datas": ["12/2021", "Actualmente"],
+                "localidade": "Brasil",
+                "funcoes": [
+                    "Programación web",
+                    "Análisis y desarrollo de Sistemas",
+                    "Resolución de problemas y errores",
+                    "Soporte al usuario"
+                ],
+                "aprendizado": [
+                    {
+                        "title": "Comprender el lenguaje de programación",
+                        "score": 70
+                    },
+                    {
+                        "title": "Lógica de programación",
+                        "score": 80
+                    },
+                    {
+                        "title": "Diseño web",
+                        "score": 80
+                    },
+                    {
+                        "title": "Marcos",
+                        "score": 85
+                    },
+                    {
+                        "title": "Depurar",
+                        "score": 80
+                    },
+                    {
+                        "title": "Código limpio",
+                        "score": 60
+                    },
+                    {
+                        "title": "Productividad y agilidad",
+                        "score": 65
+                    },
+                    {
+                        "title": "Soporte al usuario",
+                        "score": 40
+                    }
+                ],
+                "comentario": {
+                    "comentario": "La misma empresa en la que trabajaba como soporte me invitó a unirme al equipo de desarrollo, y como siempre había sido mi objetivo trabajar en esta área, ¡asistí de inmediato! Tenía conocimientos muy limitados de programación, ya que ahí estudié en la escuela técnica, aquí logré crecer mucho mis conocimientos y habilidades en la parte de programación, usando frameworks y conociendo metodologías, herramientas y técnicas.",
+                    "rating": 5
+                }
             }
         ]
     }

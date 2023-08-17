@@ -2,7 +2,7 @@
     <div class="index row">
         <div>
             <TopbarDropdown @localizationChanged='localizationChanged' />
-            <Topbar :i18Controller='i18Controll' :color="isDivVisible" class="topbar-target"/>
+            <Topbar :color="isDivVisible" class="topbar-target"/>
         </div>
         <div class="topo col-12" id="section_home">
             <div class="row w-100 text-center row-dama-title d-flex justify-content-center">
@@ -15,6 +15,7 @@
         </div>
         <About id="section_about" />
         <Education id="section_education" />
+        <Experience id="section_experiences" />
     </div>
     <!-- <div>
         <TypeWriter />

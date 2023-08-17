@@ -3,6 +3,7 @@
         "home": "Home",
         "about": "About",
         "education": "Education",
+        "experiences": "Experiences",
         "portfolio": "Portfolio",
         "contacts": "Contacts"
     },
@@ -144,6 +145,128 @@
                 "icon": "pi pi-circle-on", "color": "#7576b1", 
                 "image": "game-controller.jpg",
                 "descricao": "In one of the semesters at UNINOVE, I took a course on Information Security at the CISCO academy, which helped me to be more aware of systems security and to apply what I had learned in the development of my projects."
+            }
+        ]
+    },
+    "experiences": {
+        "title": "Experiences",
+        "experiences": [
+            {
+                "title": "CNK Salgados",
+                "cargo": "Attendant",
+                "datas": ["06/2019", "12/2029"],
+                "localidade": "Brazil",
+                "funcoes": [
+                    "Organization",
+                    "Cleaning",
+                    "Customer service"
+                ],
+                "aprendizado": [
+                    {
+                        "title": "Customer service",
+                        "score": 70
+                    },
+                    {
+                        "title": "Conversation",
+                        "score": 30
+                    }
+                ],
+                "comentario": {
+                    "comentario": "This was my first experience in the job market, and I developed better my interaction with people and sense of work. It was very good for me.",
+                    "rating": 4
+                }
+            },
+            {
+                "title": "Potencial Loterias",
+                "cargo": "Technical Support",
+                "datas": ["12/2019", "07/2021"],
+                "locallidade": "Brazil",
+                "funcoes": [
+                    "User support",
+                    "Maintenance of Micros",
+                    "Equipment maintenance",
+                    "Formatting Computers",
+                    "Equipment configuration (printers, pinpads, optical readers, security cameras, etc.)",
+                    "System Installation",
+                    "Equipment Exchange",
+                    "System Tests"
+                ],
+                "aprendizado": [
+                    {
+                        "title": "User Support",
+                        "score": 70
+                    },
+                    {
+                        "title": "Conversation",
+                        "score": 70
+                    },
+                    {
+                        "title": "Interpersonal relationship",
+                        "score": 80
+                    },
+                    {
+                        "title": "Hardware and Components",
+                        "score": 75
+                    },
+                    {
+                        "title": "Computer maintenance",
+                        "score": 60
+                    }
+                ],
+                "comentario": {
+                    "comentario": "This was my first experience in the IT area, and it was very useful for interpersonal relationships and interactions with the user, as I had to be in constant contact with them. I developed the technical part of maintenance of computers and equipment very well. It was tiring, but it was worth the learning!",
+                    "rating": 3
+                }
+            },
+            {
+                "title": "Potencial Tecnologia",
+                "cargo": "Junior Developer",
+                "datas": ["12/2021", "Currently"],
+                "localidade": "Brazil",
+                "funcoes": [
+                    "Web Programming",
+                    "Analysis and systems development",
+                    "Troubleshooting and bugs",
+                    "User support"
+                ],
+                "aprendizado": [
+                    {
+                        "title": "Understanding the programming language",
+                        "score": 70
+                    },
+                    {
+                        "title": "Programming logic",
+                        "score": 80
+                    },
+                    {
+                        "title": "Web design",
+                        "score": 80
+                    },
+                    {
+                        "title": "Frameworks",
+                        "score": 85
+                    },
+                    {
+                        "title": "Debug",
+                        "score": 80
+                    },
+                    {
+                        "title": "Clean code",
+                        "score": 60
+                    },
+                    {
+                        "title": "Productivity and agility",
+                        "score": 65
+                    },
+                    {
+                        "title": "User Support",
+                        "score": 40
+                    }
+                ],
+                "comentario": {
+                    "comentario": "The same company I was working for as support invited me to join the development team, and as it had always been my goal to work in this area, I went right away! I had very limited knowledge of programming, as there were studied at the technical school. Here I managed to grow a lot my knowledge and skills in the programming part, using frameworks and knowing methodologies, tools and techniques.",
+                    "rating": 5
+                }
             }
         ]
     }

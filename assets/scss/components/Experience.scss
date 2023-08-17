@@ -1,0 +1,68 @@
+.experience {
+    .h2-title {
+        text-align: center;
+        color: #4a4a8d8f;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+    }
+    .div-painels {
+        .painel-experiences {
+            .painel-experiences-title {
+                margin-bottom: 0;
+            }
+            .painel-experiences-subtitle {
+                color: #979798;
+                font-weight: bold;
+                font-size: 13px;
+                letter-spacing: 1px;
+            }
+            .tabview-custom {
+                .div-chip-experiences-funcoes {
+                    .chip-experiences-funcoes {
+                        background-image: linear-gradient(90deg, #f8f8ff 0%, #f6f6ff 100%);
+                        // height: 19px;
+                        font-size: 14px;
+                        font-family: "Poppins";
+                        color: #3f3f77;
+                        transition: background-color 0.5s ease, padding-left 1s ease, padding-right 1s ease;
+                        cursor: pointer;
+                        &:hover {
+                            background: linear-gradient(90deg, #f8f8ff 0%, #c5c5fb 100%);
+                            padding-left: 20px;
+                            padding-right: 20px;
+                        }
+                    }
+                }
+                .experiences-aprendizado {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    .experiences-aprendizado-span-title {
+                        font-family: 'Poppins';
+                        font-size: .85em;
+                        margin: 0;
+                    }
+                    &:hover {
+                        background: #f6eef6;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .experience {
+        .div-painels {
+            .painel-experiences {
+                .tabview-custom {
+                    .div-chip-experiences-funcoes {
+                        .chip-experiences-funcoes {
+                            background-image: linear-gradient(90deg, #f8f8ff 0%, #f6f6ff 100%);
+                            height: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}

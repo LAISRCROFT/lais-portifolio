@@ -21,13 +21,13 @@
                 .dama-title {
                     font-family: monospace;
                     color: rgb(124, 124, 191);
-                    font-size: 5em;
+                    font-size: 3em;
                 }
             }
             .typewriter-effect {
                 font-family: monospace;
                 color: #FFF;
-                font-size: 3em;
+                font-size: 2em;
                 width: 100%;
             }
         }
@@ -51,8 +51,16 @@
     .index {
         .topo {
             .row-dama-title {
+                .col-dama-title {
+                    .dama-title {
+                        font-family: monospace;
+                        color: rgb(124, 124, 191);
+                        font-size: 5em;
+                    }
+                } 
                 .typewriter-effect {
                     width: 70%;
+                    font-size: 3em;
                 }
             }
         }

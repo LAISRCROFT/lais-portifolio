@@ -1,6 +1,11 @@
+.topbar {
+    .navbar-toggler {
+        z-index: 1;
+    }
+}
 .about {
     .p-panel .p-panel-header {
-        background: #7576b1 !important;
+        background: linear-gradient(88deg, rgba(117,118,177,1) 0%, rgb(151 151 205) 100%);
         color: #FFF !important;
         font-family: 'Poppins';
         font-weight: 600;
@@ -40,6 +45,45 @@
     }
     .mr-5 {
         margin-right: 50px;
+    }
+}
+
+.experience {
+    .p-panel.p-panel-toggleable .p-panel-header {
+        padding: 0.5rem 1rem;
+        background: linear-gradient(280deg, rgb(117 117 188) 0%, rgb(221, 221, 255) 100%);
+        color: #FFF;
+    }
+    .p-panel .p-panel-header .p-panel-header-icon {
+        color: #ffffff;
+    }
+    .p-panel .p-panel-header .p-panel-title {
+        font-weight: 600;
+        color: #55558d;
+        font-size: 1.1em;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-family: 'Poppins';
+    }
+    .p-chip-icon.pi {
+        font-size: 10px;
+    }
+    .p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
+        outline: 0 none;
+        outline-offset: 0;
+        box-shadow: none;
+    }
+    .p-progressbar .p-progressbar-value {
+        background: linear-gradient(90deg, #2196F3 0%, #914fd0 100%);
+    }
+    .p-progressbar-determinate .p-progressbar-label {
+        font-size: 9px;
+        cursor: pointer;
+        transition: font-size 0.5s ease;
+        &:hover {
+            font-size: 19px;
+        }
     }
 }
 @media screen and (max-width: 576px) {

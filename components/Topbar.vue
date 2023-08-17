@@ -1,71 +1,98 @@
 <template>
-    <div class="topbar" :class="{ 'colored-text': color  }">
-      <Button :key="i18ControlCounter" :label="this.$i18n.topbar.home" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_home')"/>
-      <Button :key="i18ControlCounter" :label="this.$i18n.topbar.about" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_about')"/>
-      <Button :key="i18ControlCounter" :label="this.$i18n.topbar.education" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_education')"/>
-      <Button :key="i18ControlCounter" :label="this.$i18n.topbar.portfolio" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_portfolio')"/>
-      <Button :key="i18ControlCounter" :label="this.$i18n.topbar.contacts" class="buttons-menu d-none d-lg-block" />
-      <button class="navbar-toggler menu-button-sidebar d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+    <div class="topbar" :class="{ 'colored-text': color }">
+      <Button :label="i18n.home" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_home')"/>
+      <Button :label="i18n.about" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_about')"/>
+      <Button :label="i18n.education" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_education')"/>
+      <Button :label="i18n.experiences" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_experiences')"/>
+      <Button :label="i18n.portfolio" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_portfolio')"/>
+
+      <Button :label="i18n.contacts" class="buttons-menu d-none d-lg-block" />
+      <button 
+        class="navbar-toggler menu-button-sidebar d-block d-lg-none" 
+        type="button" 
+        data-bs-toggle="offcanvas" 
+        data-bs-target="#staticBackdrop" 
+        aria-controls="staticBackdrop"
+        @click="showSidebar = true"
+      >
         <i class="ri-menu-line menu-icon-sidebar" :class="{ 'colored-icon-sidebar': isScrolledIconSidebar }"></i>
       </button>
 
-      <div 
-        class="offcanvas offcanvas-end sidebar"
-        id="offcanvasNavbar"
-        data-bs-scroll="true" 
-        data-bs-backdrop="true"
-        >
-        <div class="offcanvas-header">
-          <button 
-            type="button" 
-            class="btn-close" 
-            data-bs-dismiss="offcanvas"
-            data-bs-target="#offcanvasNav"
-            aria-label="Close"
-            ></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item itens-sidebar">
-              <a class="nav-link active" :key="i18ControlCounter" href="javascript:void(0)">{{this.$i18n.topbar.home}}</a>
-            </li>
-            <li class="nav-item itens-sidebar">
-              <a class="nav-link active" :key="i18ControlCounter" href="javascript:void(0)" @click="scrollToSection('section_about', $event)">{{this.$i18n.topbar.about}}</a>
-            </li>
-            <li class="nav-item itens-sidebar">
-              <a class="nav-link active" :key="i18ControlCounter" href="javascript:void(0)">{{this.$i18n.topbar.portfolio}}</a>
-            </li>
-            <li class="nav-item itens-sidebar">
-              <a class="nav-link active" :key="i18ControlCounter" href="javascript:void(0)">{{this.$i18n.topbar.contacts}}</a>
-            </li>
-          </ul>
+      <div
+        :class="{ 'colored-text': color  }">
+        <div 
+          class="offcanvas offcanvas-end sidebar"
+          data-bs-backdrop="static" 
+          tabindex="-1" 
+          id="staticBackdrop" 
+          aria-labelledby="staticBackdropLabel"
+          >
+          <div class="offcanvas-header">
+            <button 
+              type="button" 
+              class="btn-close" 
+              data-bs-dismiss="offcanvas"
+              data-bs-target="#offcanvasNav"
+              aria-label="Close"
+              @click="showSidebar = false"
+              ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item itens-sidebar">
+                <a class="nav-link active" href="javascript:void(0)" @click="scrollToSection('section_home', event)">{{i18n.home}}</a>
+              </li>
+              <li class="nav-item itens-sidebar">
+                <a class="nav-link active" href="javascript:void(0)" @click="scrollToSection('section_about', event)">{{i18n.about}}</a>
+              </li>
+              <li class="nav-item itens-sidebar">
+                <a class="nav-link active" href="javascript:void(0)" @click="scrollToSection('section_education', event)">{{i18n.education}}</a>
+              </li>
+              <li class="nav-item itens-sidebar">
+                <a class="nav-link active" href="javascript:void(0)" @click="scrollToSection('section_experiences', event)">{{i18n.experiences}}</a>
+              </li>
+              <li class="nav-item itens-sidebar">
+                <a class="nav-link active" href="javascript:void(0)">{{i18n.portfolio}}</a>
+              </li>
+              <li class="nav-item itens-sidebar">
+                <a class="nav-link active" href="javascript:void(0)">{{i18n.contacts}}</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
 </template>
 <script>
+    import eventBus from '../plugins/eventBus';
     export default {
       name: 'Topbar',
       props: ['i18Controller', 'color'],
       data() {
         return {
-          i18ControlCounter: 0,
+          i18n: {},
           showSidebar: false,
           isScrolled: false,
           isScrolledIconSidebar: false,
-          color: false
         };
       },
       watch: {
-        i18Controller(){
-          this.i18ControlCounter++;
-        },
-        color() {
-          
+        showSidebar() {
+          console.log("showSidebar ", this.showSidebar)
+          eventBus.$emit('att-dropdown', this.showSidebar);
         }
       },
       mounted() {
         
+      },
+      created() {
+        this.i18n = this.$i18n.topbar
+        eventBus.$on('att-idioma', async(option) => {
+            this.selectedOption = option;
+            setTimeout(() => {
+                this.i18n = this.$i18n.topbar
+            }, 500)
+        });
       },
       beforeDestroy() {
         

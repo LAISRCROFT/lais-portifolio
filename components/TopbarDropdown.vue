@@ -2,7 +2,7 @@
     <div class="topbar-dropdawn">
         <!-- <Dropdown v-model="selectedCountry" :options="countries" optionLabel="name" placeholder="Idioma" class="buttons-menu dropdown-idioma"/> -->
         
-        <select class="dropdown-idioma" aria-label="Default select" v-model="selectedCountry" @change="emitSelectedOption">
+        <select class="dropdown-idioma" aria-label="Default select" v-model="selectedCountry" @change="emitSelectedOption" v-show="!showSidebar">
           <option :value="country.code" v-for="(country, i) in countries" :key="i">
             {{ country.name }}
           </option>
@@ -17,6 +17,7 @@
     data() {
       return {
         selectedCountry: null,
+        showSidebar: true,
         countries: [
           {name: 'USA', code: 'us'},
           {name: 'BR', code: 'br'},
@@ -31,6 +32,15 @@
     },
     mounted() {
       this.selectedCountry = 'us'
+    },
+    created() {
+      this.showSidebar = false
+      eventBus.$on('att-dropdown', async(option) => {
+          setTimeout(() => {
+              this.showSidebar = option
+              console.log(this.showSidebar)
+          }, 100)
+      });
     },
     watch: {
       selectedCountry() {
