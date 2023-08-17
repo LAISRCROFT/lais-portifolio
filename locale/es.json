@@ -57,43 +57,83 @@
             "hobbies": {
                 "programming": {
                     "title": "Programar",
-                    "description": "Me gusta programar algo que tengo en mente en mis ratos libres, me hace ampliar mis conocimientos en el área."
+                    "description": "Me gusta programar algo que tengo en mente en mis ratos libres, me hace ampliar mis conocimientos en el área.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "anime": {
                     "title": "Anime",
-                    "description": "Me gusta ver anime y leer manga, admiro mucho la cultura japonesa especialmente sus animaciones."
+                    "description": "Me gusta ver anime y leer manga, admiro mucho la cultura japonesa especialmente sus animaciones.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "cosplay": {
                     "title": "Cosplay",
-                    "description": "Siempre que puedo, me gusta disfrazarme de un personaje que amo."
+                    "description": "Siempre que puedo, me gusta disfrazarme de un personaje que amo.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "create": {
                     "title": "Crear",
-                    "description": "Siempre opté por crear maquetas, dibujos, personajes, etc. de mi propia creación en lugar de usar uno que ya existe."
+                    "description": "Siempre opté por crear maquetas, dibujos, personajes, etc. de mi propia creación en lugar de usar uno que ya existe.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "drawing": {
                     "title": "Dibujar",
-                    "description": "Como mi principal pasatiempo, me encanta dibujar. Hace unos años migré al dibujo digital, porque antes tenía varios cuadernos de bocetos llenos de dibujos y borradores."
+                    "description": "Como mi principal pasatiempo, me encanta dibujar. Hace unos años migré al dibujo digital, porque antes tenía varios cuadernos de bocetos llenos de dibujos y borradores.",
+                    "content": {
+                        "view": true,
+                        "description": "Ver mi galería"
+                    }
                 },
                 "edit": {
                     "title": "Editar",
-                    "description": "Siempre me ha gustado editar fotos, armar banners y carpetas en programas de edición, especialmente PhotoShop."
+                    "description": "Siempre me ha gustado editar fotos, armar banners y carpetas en programas de edición, especialmente PhotoShop.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "games": {
                     "title": "Games",
-                    "description": "Siempre busco un buen juego cuando llego a casa del trabajo para relajarme. Los juegos son cosas que me dan placer."
+                    "description": "Siempre busco un buen juego cuando llego a casa del trabajo para relajarme. Los juegos son cosas que me dan placer.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "piano": {
                     "title": "Piano",
-                    "description": "Me gusta tocar el piano y la guitarra, pero sobre todo el piano. Cuando lo toco, siempre siento una paz inmensa."
+                    "description": "Me gusta tocar el piano y la guitarra, pero sobre todo el piano. Cuando lo toco, siempre siento una paz inmensa.",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "read": {
                     "title": "Leer",
-                    "description": "Me encanta leer libros de ciencia ficción, ¡siempre me abre la mente a un mundo lleno de imaginación!"
+                    "description": "Me encanta leer libros de ciencia ficción, ¡siempre me abre la mente a un mundo lleno de imaginación!",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 },
                 "writing": {
                     "title": "Escribir",
-                    "description": "¡Me encanta escribir mis propios libros y poemas, crear mis propios personajes y publicarlos para que la gente se dé cuenta de las cosas más asombrosas que puedo lograr en mi imaginación!"
+                    "description": "¡Me encanta escribir mis propios libros y poemas, crear mis propios personajes y publicarlos para que la gente se dé cuenta de las cosas más asombrosas que puedo lograr en mi imaginación!",
+                    "content": {
+                        "view": false,
+                        "description": ""
+                    }
                 }
             }
         }
