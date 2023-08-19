@@ -67,8 +67,8 @@
                     "title": "Anime",
                     "description": "I like to watch anime and read manga, I really admire Japanese culture especially their animations.",
                     "content": {
-                        "view": false,
-                        "description": ""
+                        "view": true,
+                        "description": "See my favorite anime"
                     }
                 },
                 "cosplay": {
@@ -107,16 +107,16 @@
                     "title": "Games",
                     "description": "I always look for a good game when I get home from work to relax. Games are things that give me pleasure.",
                     "content": {
-                        "view": false,
-                        "description": ""
+                        "view": true,
+                        "description": "See my favorite games"
                     }
                 },
                 "piano": {
                     "title": "Piano",
                     "description": "I like to play the piano and the guitar, but mainly the piano. When I touch him, I always feel immense peace.",
                     "content": {
-                        "view": false,
-                        "description": ""
+                        "view": true,
+                        "description": "See my favorite artists"
                     }
                 },
                 "read": {
@@ -135,7 +135,9 @@
                         "description": ""
                     }
                 }
-            }
+            },
+            "bestAlbum": "Best Album",
+            "bestMusic": "Best Music"
         }
     },
     "education": {
