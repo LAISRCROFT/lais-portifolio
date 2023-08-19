@@ -67,8 +67,8 @@
                     "title": "Anime",
                     "description": "Gosto de assistir animes e ler mangás, admiro muito a cultura japonesa especialmente suas animações.",
                     "content": {
-                        "view": false,
-                        "description": ""
+                        "view": true,
+                        "description": "Ver meus animes favoritos"
                     }
                 },
                 "cosplay": {
@@ -107,16 +107,16 @@
                     "title": "Games",
                     "description": "Sempre busco uma boa jogatina quando chego do trabalho para relaxar. Jogos são coisas que me dão lazer.",
                     "content": {
-                        "view": false,
-                        "description": ""
+                        "view": true,
+                        "description": "Ver meus jogos favoritos"
                     }
                 },
                 "piano": {
                     "title": "Piano",
                     "description": "Gosto de tocar piano e violão, mas principalmente o piano. Ao tocá-lo, eu sempre sinto uma paz imensa.",
                     "content": {
-                        "view": false,
-                        "description": ""
+                        "view": true,
+                        "description": "Ver meus artistas favoritos"
                     }
                 },
                 "read": {
@@ -135,7 +135,9 @@
                         "description": ""
                     }
                 }
-            }
+            },
+            "bestAlbum": "Melhor Álbum",
+            "bestMusic": "Melhor música"
         }
     },
     "education": {
