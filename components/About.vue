@@ -82,7 +82,7 @@
                         <hr />
                     </div>
                 </div>
-                <div class="row">
+                <div class="row description">
                     <div class="offset-1 offset-xxl-2 col-10 col-xxl-8 mt-1">
                         <h3>{{ i18n.interests_and_hobbies.title }}</h3>
                         <p>

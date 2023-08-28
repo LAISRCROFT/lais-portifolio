@@ -228,7 +228,7 @@
         "labels": {
             "funcoes": "Functions",
             "aprendizado": "Learned",
-            "comentario": "Comentario"
+            "comentario": "Comment"
         },
         "experiences": [
             {
@@ -365,7 +365,7 @@
                 },
                 {
                     "label": "PHP",
-                    "value": 15
+                    "value": 20
                 },
                 {
                     "label": "Java",
