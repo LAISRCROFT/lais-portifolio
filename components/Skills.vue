@@ -18,28 +18,30 @@
                             {{ i18n.skills.labels.linguagens_programacao }}
                         </h2>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-2 col-xl-1 knobs" v-for="(skill, index) in skills.linguagens_programacao" :key="index">
+                    <div class="col-6 col-md-4 col-lg-2 col-xl-1 knobs" v-for="(language, i) in skills.linguagens_programacao" :key="i">
                         <div class="row">
                             <div class="col-12 d-flex justify-content-center cols-knobs-label">
-                                <p>{{ skill.label }}</p>
+                                <p>{{ language.label }}</p>
                             </div>
                             <div class="col-12 d-flex justify-content-center cols-knobs-value">
-                                <Knob v-model="skill.value" valueColor="#7576b1" rangeColor="#FFF" readonly />
+                                <Knob v-model="language.value" valueColor="#7576b1" rangeColor="#FFF" readonly />
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row flex col-row-knobs">
                     <div class="col-12 title-knobs mb-4 mt-5">
                         <h2>
                             {{ i18n.skills.labels.design }}
                         </h2>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-2 col-xl-1 knobs" v-for="(skill, index) in skills.design" :key="index">
+                    <div class="col-6 col-md-4 col-lg-2 col-xl-1 knobs" v-for="(design, index) in skills.design" :key="index">
                         <div class="row">
                             <div class="col-12 d-flex justify-content-center cols-knobs-label">
-                                <p>{{ skill.label }}</p>
+                                <p>{{ design.label }}</p>
                             </div>
                             <div class="col-12 d-flex justify-content-center cols-knobs-value">
-                                <Knob v-model="skill.value" valueColor="#a166b2" rangeColor="#FFF" readonly />
+                                <Knob v-model="design.value" valueColor="#a166b2" rangeColor="#FFF" readonly />
                             </div>
                         </div>
                     </div>
@@ -76,9 +78,6 @@
                                                             </tr>
                                                         </tbody>
                                                     </table>
-                                                    <!-- <div class="col-12 d-flex justify-content-center cols-knobs-value">
-                                                        <Knob v-model="skill.value" valueColor="#8787b9" rangeColor="#FFF" readonly />
-                                                    </div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -109,9 +108,6 @@
                                                             </tr>
                                                         </tbody>
                                                     </table>
-                                                    <!-- <div class="col-12 d-flex justify-content-center cols-knobs-value">
-                                                        <Knob v-model="skill.value" valueColor="#8787b9" rangeColor="#FFF" readonly />
-                                                    </div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -142,9 +138,6 @@
                                                             </tr>
                                                         </tbody>
                                                     </table>
-                                                    <!-- <div class="col-12 d-flex justify-content-center cols-knobs-value">
-                                                        <Knob v-model="skill.value" valueColor="#8787b9" rangeColor="#FFF" readonly />
-                                                    </div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -214,7 +207,6 @@
                                         <p>{{ skill.label }}</p>
                                     </div>
                                     <div class="col-12 d-flex justify-content-center cols-knobs-value">
-                                        <!-- <Knob v-model="skill.value" valueColor="#a166b2" rangeColor="#FFF" readonly /> -->
                                         <Chart type="doughnut" :data="skill.chartData" :options="skill.chartOptions" :width="135" :height="135" offset="2"/>
                                     </div>
                                 </div>

@@ -9,6 +9,7 @@
         .painel-experiences {
             .painel-experiences-title {
                 margin-bottom: 0;
+                font-family: 'Poppins';
             }
             .painel-experiences-subtitle {
                 color: #979798;
@@ -44,6 +45,13 @@
                     }
                     &:hover {
                         background: #f6eef6;
+                    }
+                }
+                .tabpanel-comentario {
+                    p {
+                        font-family: 'Poppins';
+                        font-size: .95em;
+                        letter-spacing: 1px;
                     }
                 }
             }

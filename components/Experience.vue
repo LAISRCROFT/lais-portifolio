@@ -34,7 +34,7 @@
                             </div>
                         </div>
                     </TabPanel>
-                    <TabPanel>
+                    <TabPanel class="tabpanel-comentario">
                         <template #header>
                             <span>{{ i18n.labels.comentario }}</span>
                             <i class="pi pi-bars"></i>
