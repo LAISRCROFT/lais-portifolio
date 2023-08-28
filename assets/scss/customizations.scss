@@ -2,13 +2,22 @@
     .navbar-toggler {
         z-index: 1;
     }
+    .p-button{
+        &:focus {
+            outline: 0 none;
+            outline-offset: 0;
+            box-shadow: none;
+            color: #a6d5fa !important;
+        }
+    }
 }
 .about {
     .p-panel .p-panel-header {
-        background: linear-gradient(88deg, rgba(117,118,177,1) 0%, rgb(151 151 205) 100%);
-        color: #FFF !important;
-        font-family: 'Poppins';
+        background: linear-gradient(88deg, #7576b1 0%, #babaee 100%);
+        font-family: "Poppins";
         font-weight: 600;
+        border-radius: 10px 10px 0px 0px;
+        color: #FFF;
         .p-panel-header-icon {
             color: #FFF !important;
         }
@@ -16,6 +25,7 @@
     .p-panel .p-panel-content {
         padding-top: 10px;
         padding-bottom: 10px;
+        // border-radius: 10px;
     }
 }
 
@@ -106,6 +116,23 @@
         transition: font-size 0.5s ease;
         &:hover {
             font-size: 19px;
+        }
+    }
+}
+
+.skills {
+    .p-knob-text {
+        font-size: 1.3rem;
+        text-align: center;
+        font-family: 'Poppins';
+        background-image: url('assets/logos/ps.png');
+    }
+    .col-banco-dados {
+        .p-progressbar .p-progressbar-value {
+            background: linear-gradient(90deg, #2196F3 0%, #914fd0 100%);
+        }
+        .p-progressbar-determinate .p-progressbar-label {
+            font-size: .7em;
         }
     }
 }

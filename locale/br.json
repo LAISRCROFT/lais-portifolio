@@ -4,7 +4,7 @@
         "about": "Sobre",
         "education": "Formação",
         "experiences": "Experiências",
-        "portfolio": "Portifólio",
+        "skills": "Habilidades",
         "contacts": "Contatos"
     },
     "home": {
@@ -14,7 +14,7 @@
     },
     "about": {
         "title": "Sobre mim",
-        "introduction": "Sou uma Web Designer e Desenvolvedor Driativo",
+        "introduction": "Sou uma Web Designer e Desenvolvedor Criativo",
         "introduction_text": "Eu sou a Laís. Sou um desenvolvedor web full stack júnior na empresa em que trabalho há 4 anos. Minha parte favorita do trabalho é o front-end e o web design. Gosto de trabalhar na área de programação e também na área de design e comunicação visual.",
         "basic_informations_title": "Informações básicas",
         "basic_informations_metadata": {
@@ -170,11 +170,24 @@
                 ]
             },
             {
+                "title": "SAGA", 
+                "data_inicial": "06/2020", 
+                "data_final": "06/2020", 
+                "curso": "Photoshop - do zero ao avançado", 
+                "icon": "pi pi-circle-on", 
+                "color": "#7576b1", 
+                "descricao": "Antes desses curso eu já fazia alguns trabalhos usando o photoshop para ter uma renda extra. Mas, graças a esse curso pude aperfeiçoar minhas habilidades com a ferramenta",
+                "certificados": [
+                    "Certificado de conclusão"
+                ]
+            },
+            {
                 "title": "UNINOVE", 
                 "data_inicial": "02/2021", 
                 "data_final": "12/2024", 
                 "curso": "Bacharelado em Ciência da Computação", 
-                "icon": "pi pi-circle-on", "color": "#7576b1", 
+                "icon": "pi pi-circle-on", 
+                "color": "#7576b1", 
                 "image": "game-controller.jpg",
                 "descricao": "Decidi começar uma faculdade na área de computação e seguir com a carreira profissional em TI. Estou desenvolvendo e aperfeiçoando habilidades em infra, mas principalmente programação.",
                 "certificados": [
@@ -186,7 +199,8 @@
                 "data_inicial": "02/2021", 
                 "data_final": "06/2021", 
                 "curso": "Network Essencials Redes de Computadores", 
-                "icon": "pi pi-circle-on", "color": "#7576b1", 
+                "icon": "pi pi-circle-on", 
+                "color": "#7576b1", 
                 "image": "game-controller.jpg",
                 "descricao": "Em um dos semestres da UNINOVE, fiz um curso sobre Rede de Computadores pela CISCO Academy, o que me agregou conhecimentos em redes e me ajudou com o suporte aonde eu trabalhava na época.",
                 "certificados": [
@@ -198,7 +212,8 @@
                 "data_inicial": "08/2022", 
                 "data_final": "12/2022", 
                 "curso": "Cybersecurity Essencials", 
-                "icon": "pi pi-circle-on", "color": "#7576b1", 
+                "icon": "pi pi-circle-on", 
+                "color": "#7576b1", 
                 "image": "game-controller.jpg",
                 "descricao": "Em um dos semestres da UNINOVE, fiz um curso sobre Segurança da Informação pela CISCO academy, o que me ajudou a ter mais noção sobre a segurança de sistemas e aplicar o aprendizado no desenvolvimento dos meus projetos.",
                 "certificados": [
@@ -219,7 +234,7 @@
             {
                 "title": "CNK Salgados",
                 "cargo": "Atendente",
-                "datas": ["06/2019", "12/2029"],
+                "datas": ["06/2019", "12/2019"],
                 "localidade": "Brasil",
                 "funcoes": [
                     "Organização",
@@ -334,5 +349,181 @@
                 }
             }
         ]
+    },
+    "skills": {
+        "title": "Habilidades",
+        "description": "Destaco aqui algumas das minhas habilidades que eu desenvolvi durante o tempo de experiência e educacional. Vocês podem notar que eu feição maior quando vou mexer com as partes visuais e softwares de edição de imagens.",
+        "skills": {
+            "linguagens_programacao": [
+                {
+                    "label": "JavaScript",
+                    "value": 70
+                },
+                {
+                    "label": "TypeScript",
+                    "value": 45
+                },
+                {
+                    "label": "PHP",
+                    "value": 15
+                },
+                {
+                    "label": "Java",
+                    "value": 15
+                }
+            ],
+            "design": [
+                {
+                    "label": "HTML",
+                    "value": 80
+                },
+                {
+                    "label": "CSS",
+                    "value": 75
+                },
+                {
+                    "label": "SCSS",
+                    "value": 75
+                },
+                {
+                    "label": "Photoshop",
+                    "value": 85
+                },
+                {
+                    "label": "Illustrator",
+                    "value": 30
+                }
+            ],
+            "outros_idiomas": [
+                {
+                    "label": "Inglês",
+                    "chartData": {
+                        "labels": ["Conversação","Entendimento","Escrita"],
+                        "datasets": [
+                            {
+                                "data": [30, 40, 50],
+                                "borderWidth": 2,
+                                "borderColor": "#d0d0ef",
+                                "hoverBorderWidth": 0,
+                                "backgroundColor": [
+                                    "#7576b1",
+                                    "#a166b2",
+                                    "#8787b9"
+                                ],
+                                "hoverBackgroundColor": [
+                                    "#7576b1",
+                                    "#a166b2",
+                                    "#8787b9"
+                                ]
+                            }
+                        ]
+                    },
+                    "chartOptions": {
+                        "plugins": {
+                            "legend": {
+                                "display": false
+                            }
+                        },
+                        "cutout": "60%"
+                    }
+                }
+            ],
+            "frameworks": {
+                "backend": [
+                    {
+                        "label": "NestJS",
+                        "value": 50,
+                        "value2": 5
+                    }
+                ],
+                "frontend": [
+                    {
+                        "label": "PrimeVue",
+                        "value": 40,
+                        "value2": 4
+                    },
+                    {
+                        "label": "Quasar",
+                        "value": 60,
+                        "value2": 6
+                    },
+                    {
+                        "label": "Vuesax",
+                        "value": 80,
+                        "value2": 8
+                    },
+                    {
+                        "label": "Vuetify",
+                        "value": 80,
+                        "value2": 8
+                    },
+                    {
+                        "label": "BootstrapVue",
+                        "value": 55,
+                        "value2": 5
+                    },
+                    {
+                        "label": "NuxtJS",
+                        "value": 45,
+                        "value2": 4
+                    }
+                ],
+                "mobile": [
+                    {
+                        "label": "Flutter",
+                        "value": 25,
+                        "value2": 2
+                    }
+                ]
+            },
+            "banco_de_dados": [
+                {
+                    "label": "MongoDB",
+                    "value": 55
+                },
+                {
+                    "label": "MySQL",
+                    "value": 30
+                }
+            ],
+            "hardware_e_infraestrutura": [
+                {
+                    "label": "Manutenção de micros",
+                    "value": 50
+                },
+                {
+                    "label": "Manutenção de equipamentos",
+                    "value": 45
+                },
+                {
+                    "label": "Formatação de computadores",
+                    "value": 80
+                },
+                {
+                    "label": "Redes de computadores",
+                    "value": 35
+                },
+                {
+                    "label": "Internet",
+                    "value": 35
+                },
+                {
+                    "label": "Microsoft Windows",
+                    "value": 60
+                },
+                {
+                    "label": "Linux",
+                    "value": 20
+                }
+            ],
+            "labels": {
+                "linguagens_programacao": "Linguagens de programação",
+                "design": "Habilidades com design",
+                "outros_idiomas": "Outros idiomas",
+                "frameworks": "Habilidades com frameworks",
+                "banco_de_dados": "Habilidades com banco de dados",
+                "hardware_e_infraestrutura": "Habilidades com Hardware e infraestrutura"
+            }
+        }
     }
 }

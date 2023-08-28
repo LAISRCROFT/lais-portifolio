@@ -16,6 +16,7 @@
         <About id="section_about" />
         <Education id="section_education" />
         <Experience id="section_experiences" />
+        <Skills id="section_skills" />
     </div>
     <!-- <div>
         <TypeWriter />

@@ -30,6 +30,8 @@ import Tooltip from 'primevue/tooltip';
 import Badge from 'primevue/badge';
 import BadgeDirective from 'primevue/badgedirective';
 import Steps from 'primevue/steps';
+import Knob from 'primevue/knob';
+import Chart from 'primevue/chart';
 
 Vue.use(PrimeVue);
 Vue.component('Button', Button);
@@ -62,6 +64,8 @@ Vue.component('Tooltip', Tooltip);
 Vue.component('Badge', Badge);
 Vue.component('BadgeDirective', BadgeDirective);
 Vue.component('Steps', Steps);
+Vue.component('Knob', Knob);
+Vue.component('Chart', Chart);
 
 
 Vue.directive('tooltip', Tooltip);
