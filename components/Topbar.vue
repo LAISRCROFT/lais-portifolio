@@ -4,7 +4,7 @@
       <Button :label="i18n.about" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_about')"/>
       <Button :label="i18n.education" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_education')"/>
       <Button :label="i18n.experiences" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_experiences')"/>
-      <Button :label="i18n.portfolio" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_portfolio')"/>
+      <Button :label="i18n.skills" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_skills')"/>
 
       <Button :label="i18n.contacts" class="buttons-menu d-none d-lg-block" />
       <button 
@@ -52,7 +52,7 @@
                 <a class="nav-link active" href="javascript:void(0)" @click="scrollToSection('section_experiences', event)">{{i18n.experiences}}</a>
               </li>
               <li class="nav-item itens-sidebar">
-                <a class="nav-link active" href="javascript:void(0)">{{i18n.portfolio}}</a>
+                <a class="nav-link active" href="javascript:void(0)" @click="scrollToSection('section_skills', event)">{{i18n.skills}}</a>
               </li>
               <li class="nav-item itens-sidebar">
                 <a class="nav-link active" href="javascript:void(0)">{{i18n.contacts}}</a>

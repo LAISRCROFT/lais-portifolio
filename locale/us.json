@@ -4,7 +4,7 @@
         "about": "About",
         "education": "Education",
         "experiences": "Experiences",
-        "portfolio": "Portfolio",
+        "skills": "Skills",
         "contacts": "Contacts"
     },
     "home": {
@@ -170,11 +170,24 @@
                 ]
             },
             {
+                "title": "SAGA", 
+                "data_inicial": "06/2020", 
+                "data_final": "06/2020", 
+                "curso": "Photoshop - from zero to advanced", 
+                "icon": "pi pi-circle-on", 
+                "color": "#7576b1", 
+                "descricao": "Before this course, I already did some work using photoshop to earn extra income. But, thanks to this course, I was able to improve my skills with the tool",
+                "certificados": [
+                    "Certificate of completion"
+                ]
+            },
+            {
                 "title": "UNINOVE", 
                 "data_inicial": "02/2021", 
                 "data_final": "12/2024", 
                 "curso": "Bachelor's Degree in Computer Science", 
-                "icon": "pi pi-circle-on", "color": "#7576b1", 
+                "icon": "pi pi-circle-on", 
+                "color": "#7576b1", 
                 "image": "game-controller.jpg",
                 "descricao": "I decided to start college in the computing area and pursue a professional career in IT. I'm developing and improving skills in infrastructure, but mainly programming.",
                 "certificados": [
@@ -186,7 +199,8 @@
                 "data_inicial": "02/2021", 
                 "data_final": "06/2021", 
                 "curso": "Network Essencials Computer network", 
-                "icon": "pi pi-circle-on", "color": "#7576b1", 
+                "icon": "pi pi-circle-on", 
+                "color": "#7576b1", 
                 "image": "game-controller.jpg",
                 "descricao": "In one of the semesters at UNINOVE, I took a course on Computer Networks at the CISCO Academy, which added knowledge in networks and helped me with the support where I worked at the time.",
                 "certificados": [
@@ -198,7 +212,8 @@
                 "data_inicial": "08/2022", 
                 "data_final": "12/2022", 
                 "curso": "Cybersecurity Essencials", 
-                "icon": "pi pi-circle-on", "color": "#7576b1", 
+                "icon": "pi pi-circle-on", 
+                "color": "#7576b1", 
                 "image": "game-controller.jpg",
                 "descricao": "In one of the semesters at UNINOVE, I took a course on Information Security at the CISCO academy, which helped me to be more aware of systems security and to apply what I had learned in the development of my projects.",
                 "certificados": [
@@ -219,7 +234,7 @@
             {
                 "title": "CNK Salgados",
                 "cargo": "Attendant",
-                "datas": ["06/2019", "12/2029"],
+                "datas": ["06/2019", "12/2019"],
                 "localidade": "Brazil",
                 "funcoes": [
                     "Organization",
@@ -334,5 +349,181 @@
                 }
             }
         ]
+    },
+    "skills": {
+        "title": "Skills",
+        "description": "I highlight here some of my skills that I developed during my experience and educational time. You can notice that I look bigger when I'm going to work with the visual parts and image editing software.",
+        "skills": {
+            "linguagens_programacao": [
+                {
+                    "label": "JavaScript",
+                    "value": 70
+                },
+                {
+                    "label": "TypeScript",
+                    "value": 45
+                },
+                {
+                    "label": "PHP",
+                    "value": 15
+                },
+                {
+                    "label": "Java",
+                    "value": 15
+                }
+            ],
+            "design": [
+                {
+                    "label": "HTML",
+                    "value": 80
+                },
+                {
+                    "label": "CSS",
+                    "value": 75
+                },
+                {
+                    "label": "SCSS",
+                    "value": 75
+                },
+                {
+                    "label": "Photoshop",
+                    "value": 85
+                },
+                {
+                    "label": "Illustrator",
+                    "value": 30
+                }
+            ],
+            "outros_idiomas": [
+                {
+                    "label": "English",
+                    "chartData": {
+                        "labels": ["Conversation", "Understanding", "Writing"],
+                        "datasets": [
+                            {
+                                "data": [30, 40, 50],
+                                "borderWidth": 2,
+                                "borderColor": "#d0d0ef",
+                                "hoverBorderWidth": 0,
+                                "backgroundColor": [
+                                    "#7576b1",
+                                    "#a166b2",
+                                    "#8787b9"
+                                ],
+                                "hoverBackgroundColor": [
+                                    "#7576b1",
+                                    "#a166b2",
+                                    "#8787b9"
+                                ]
+                            }
+                        ]
+                    },
+                    "chartOptions": {
+                        "plugins": {
+                            "legend": {
+                                "display": false
+                            }
+                        },
+                        "cutout": "60%"
+                    }
+                }
+            ],
+            "frameworks": {
+                "backend": [
+                    {
+                        "label": "NestJS",
+                        "value": 50,
+                        "value2": 5
+                    }
+                ],
+                "frontend": [
+                    {
+                        "label": "PrimeVue",
+                        "value": 40,
+                        "value2": 4
+                    },
+                    {
+                        "label": "Quasar",
+                        "value": 60,
+                        "value2": 6
+                    },
+                    {
+                        "label": "Vuesax",
+                        "value": 80,
+                        "value2": 8
+                    },
+                    {
+                        "label": "Vuetify",
+                        "value": 80,
+                        "value2": 8
+                    },
+                    {
+                        "label": "BootstrapVue",
+                        "value": 55,
+                        "value2": 5
+                    },
+                    {
+                        "label": "NuxtJS",
+                        "value": 45,
+                        "value2": 4
+                    }
+                ],
+                "mobile": [
+                    {
+                        "label": "Flutter",
+                        "value": 25,
+                        "value2": 2
+                    }
+                ]
+            },
+            "banco_de_dados": [
+                {
+                    "label": "MongoDB",
+                    "value": 55
+                },
+                {
+                    "label": "MySQL",
+                    "value": 30
+                }
+            ],
+            "hardware_e_infraestrutura": [
+                {
+                    "label": "Maintenance of computers",
+                    "value": 50
+                },
+                {
+                    "label": "Equipment maintenance",
+                    "value": 45
+                },
+                {
+                    "label": "Formatting computers",
+                    "value": 80
+                },
+                {
+                    "label": "Computer networks",
+                    "value": 35
+                },
+                {
+                    "label": "Internet",
+                    "value": 35
+                },
+                {
+                    "label": "Microsoft Windows",
+                    "value": 60
+                },
+                {
+                    "label": "Linux",
+                    "value": 20
+                }
+            ],
+            "labels": {
+                "linguagens_programacao": "Programming languages",
+                "design": "Design Skills",
+                "outros_idiomas": "Other languages",
+                "frameworks": "Frameworks Skills",
+                "banco_de_dados": "Database Skills",
+                "hardware_e_infraestrutura": "Hardware and infrastructure skills"
+            }
+        }
     }
 }
