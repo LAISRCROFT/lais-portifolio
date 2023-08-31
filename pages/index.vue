@@ -17,6 +17,7 @@
         <Education id="section_education" />
         <Experience id="section_experiences" />
         <Skills id="section_skills" />
+        <Projects id="section_projects" />
     </div>
     <!-- <div>
         <TypeWriter />
@@ -25,6 +26,7 @@
 <script>
 import Typewriter from 'typewriter-effect/dist/core';
 import eventBus from '../plugins/eventBus'
+import Projects from '~/components/Projects.vue';
 
 export default {
     data() {
@@ -35,23 +37,23 @@ export default {
         };
     },
     mounted() {
-        this.typeWriterEffect()
+        this.typeWriterEffect();
         window.addEventListener("scroll", this.checkDivVisibility);
     },
     beforeDestroy() {
         window.removeEventListener("scroll", this.checkDivVisibility);
     },
     async created() {
-        eventBus.$on('att-idioma', async(option) => {
+        eventBus.$on('att-idioma', async (option) => {
             this.selectedOption = option;
             setTimeout(() => {
-                this.typeWriterEffect()
-            }, 500)
+                this.typeWriterEffect();
+            }, 500);
         });
     },
     methods: {
-        localizationChanged(){
-            this.i18Controll++
+        localizationChanged() {
+            this.i18Controll++;
         },
         async typeWriterEffect() {
             var app = document.getElementById('app');
@@ -60,25 +62,25 @@ export default {
                 delay: 75,
             });
             typewriter
-            .typeString(this.$i18n.home.typeWriterPT1)
-            .pauseFor(300)
-            .deleteChars(this.$i18n.home.typeWriterPT1.length)
-            .typeString(this.$i18n.home.typeWriterPT2)
-            .typeString(this.$i18n.home.typeWriterPT3)
-            .pauseFor(1000)
-            .start();
+                .typeString(this.$i18n.home.typeWriterPT1)
+                .pauseFor(300)
+                .deleteChars(this.$i18n.home.typeWriterPT1.length)
+                .typeString(this.$i18n.home.typeWriterPT2)
+                .typeString(this.$i18n.home.typeWriterPT3)
+                .pauseFor(1000)
+                .start();
         },
         checkDivVisibility() {
             const targetDiv = document.querySelector(".topo");
-            if (!targetDiv) return;
+            if (!targetDiv)
+                return;
             const targetDivPosition = targetDiv.getBoundingClientRect();
-            let height = targetDivPosition.height-(targetDivPosition.height*0.1)
+            let height = targetDivPosition.height - (targetDivPosition.height * 0.1);
             this.isDivVisible = window.scrollY >= height;
         }
     },
-    watch: {
-        
-    }
+    watch: {},
+    components: { Projects }
 };
 </script>
 <style lang="scss">

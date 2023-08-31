@@ -10,7 +10,8 @@
     }
     .foto {
         width: 70%;
-        -webkit-box-shadow: 19px 19px 0px 0px rgba(0, 0, 0, 0.1), 13px 13px 0px -3px rgb(255, 255, 255), 18px 17px 0px -3px rgb(130, 131, 197)
+        -webkit-box-shadow: 19px 19px 0px 0px rgba(0, 0, 0, 0.1), 13px 13px 0px -3px rgb(255, 255, 255), 18px 17px 0px -3px rgb(130, 131, 197);
+        border-radius: 28px;
     }
     .galeria {
         .p-galleria-item-nav-onhover .p-galleria-item-wrapper:hover .p-galleria-item-nav {
