@@ -526,5 +526,50 @@
                 "hardware_e_infraestrutura": "Habilidades com Hardware e infraestrutura"
             }
         }
+    },
+    "projects": {
+        "title": "Projetos",
+        "description": "Durante a minha jornada na faculdade, fiz alguns projetos para apresentação em aula e garanto que foi um grande aprendizado. ",
+        "th_labels": {
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "database": "Banco de dados"
+        },
+        "tooltips": {
+            "github": "Clique para ir ao GitHub do projeto",
+            "link": "Clique para ir ao site hospedado"
+        },
+        "projects": [
+            {
+                "title": "WorldBooks",
+                "description": "Foi solicitado ao meu grupo para desenvolver um sistema (desktop ou web, escolhemos web) e, logo pensamos o que seria mais nossa 'cara'. Um site de livros inspirado na plataforma Wattpad, utilizado para fanfics e histórias originais. Eu fiquei com a parte do frontend e meu colega desenvolveu o backend do site, enquanto os outros membros prototipavam e analisavam o fluxo. Na época eu ainda era bem iniciante, então acabei me desenvolvendo melhor.",
+                "screenshot": "assets/images/screenshots/wb_desktop_login_screenshot.jpg",
+                "ferramentas": {
+                    "frontend": "Quasar JS",
+                    "backend": "Laravel",
+                    "database": "MySQL"
+                },
+                "link": "https://worldbooks.serratedevs.com.br/#/",
+                "repositoryGitHub": "https://github.com/brunoserrate/worldsbook",
+                "typeImage": 1,
+                "width": 95,
+                "width_md": 100
+            },
+            {
+                "title": "WorldBooks Mobile",
+                "description": "Em outro semestre, recebi um plano de projeto para desenvolver uma aplicação de multiplataforma e claramente eu logo pensei em desenvolver a versão mobile do WorldBooks. O framework exigido tinha sido Flutter, que é uma ferramenta baseado na linguagem de programação Dart criado pela Google. Eu nunca tinha mexido antes com aplicações para celular, no entanto foi uma grande experiência aprender a ferramenta. Eu reaproveitei o backend da versão, mas por ora, o aplicativo não está 100% completo, pois desenvolvi o que era necessário para a apresentação do projeto, mas iremos trabalhar para completá-lo.",
+                "screenshot": "assets/images/screenshots/wb_mobile_login_screenshot.jpg",
+                "ferramentas": {
+                    "frontend": "Flutter",
+                    "backend": "Laravel",
+                    "database": "MySQL"
+                },
+                "link": "",
+                "repositoryGitHub": "https://github.com/LAISRCROFT/wb-flutter-v1",
+                "typeImage": 2,
+                "width": 70,
+                "width_md": 50
+            }
+        ]
     }
 }

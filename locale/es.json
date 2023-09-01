@@ -526,5 +526,50 @@
                 "hardware_e_infraestrutura": "Habilidades con hardware e infraestructura"
             }
         }
+    },
+    "projects": {
+        "title": "Proyectos",
+        "description": "Durante mi trayectoria universitaria, realicé algunos proyectos para presentar en clase y les aseguro que fue una gran experiencia de aprendizaje.",
+        "th_labels": {
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "database": "Base de datos"
+        },
+        "tooltips": {
+            "github": "Haz clic para ir al proyecto GitHub",
+            "link": "Haga clic para ir al sitio alojado"
+        },
+        "projects": [
+            {
+                "title": "WorldBooks",
+                "description": "Le pidieron a mi grupo que desarrollara un sistema (de escritorio o web, elegimos web) y pronto pensamos en cuál sería más nuestra 'cara'. Un sitio de libros inspirado en la plataforma Wattpad, utilizado para fanfics e historias originales. . Tomé la parte del frontend y mi colega desarrolló el backend del sitio, mientras los otros miembros crearon prototipos y analizaron el flujo. En ese momento yo todavía era bastante principiante, así que terminé desarrollándome mejor.",
+                "screenshot": "assets/images/screenshots/wb_desktop_login_screenshot.jpg",
+                "ferramentas": {
+                    "frontend": "Quasar JS",
+                    "backend": "Laravel",
+                    "database": "MySQL"
+                },
+                "link": "https://worldbooks.serratedevs.com.br/#/",
+                "repositoryGitHub": "https://github.com/brunoserrate/worldsbook",
+                "typeImage": 1,
+                "width": 95,
+                "width_md": 100
+            },
+            {
+                "title": "WorldBooks Mobile",
+                "description": "En otro semestre, recibí un plan de proyecto para desarrollar una aplicación multiplataforma y claramente pensé inmediatamente en desarrollar la versión móvil de WorldBooks. El framework requerido había sido Flutter, que es una herramienta basada en la programación Dart. lenguaje creado por Google. Nunca antes había trabajado con aplicaciones móviles, sin embargo fue una gran experiencia aprender la herramienta. Reutilicé la versión backend, pero por ahora la aplicación no está 100% completa, porque desarrollé lo necesario para la presentación del proyecto, pero trabajaremos para completarlo.",
+                "screenshot": "assets/images/screenshots/wb_mobile_login_screenshot.jpg",
+                "ferramentas": {
+                    "frontend": "Flutter",
+                    "backend": "Laravel",
+                    "database": "MySQL"
+                },
+                "link": "",
+                "repositoryGitHub": "https://github.com/LAISRCROFT/wb-flutter-v1",
+                "typeImage": 2,
+                "width": 70,
+                "width_md": 50
+            }
+        ]
     }
 }

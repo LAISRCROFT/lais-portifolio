@@ -526,5 +526,50 @@
                 "hardware_e_infraestrutura": "Hardware and infrastructure skills"
             }
         }
+    },
+    "projects": {
+        "title": "Projects",
+        "description": "During my college journey, I made some projects to present in class and I assure you it was a great learning experience.",
+        "th_labels": {
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "database": "Database"
+        },
+        "tooltips": {
+            "github": "Click to go to project GitHub",
+            "link": "Click to go to hosted site"
+        },
+        "projects": [
+            {
+                "title": "WorldBooks",
+                "description": "My group was asked to develop a system (desktop or web, we chose web) and soon we thought what would be more our 'face'. A book site inspired by the Wattpad platform, used for fanfics and original stories . I took the frontend part and my colleague developed the backend of the site, while the other members prototyped and analyzed the flow. At the time I was still quite a beginner, so I ended up developing better.",
+                "screenshot": "assets/images/screenshots/wb_desktop_login_screenshot.jpg",
+                "ferramentas": {
+                    "frontend": "Quasar JS",
+                    "backend": "Laravel",
+                    "database": "MySQL"
+                },
+                "link": "https://worldbooks.serratedevs.com.br/#/",
+                "repositoryGitHub": "https://github.com/brunoserrate/worldsbook",
+                "typeImage": 1,
+                "width": 95,
+                "width_md": 100
+            },
+            {
+                "title": "WorldBooks Mobile",
+                "description": "In another semester, I received a project plan to develop a cross-platform application and clearly I soon thought of developing the mobile version of WorldBooks. The required framework had been Flutter, which is a tool based on the Dart programming language created by Google. I had never worked with mobile applications before, however it was a great experience to learn the tool. I reused the backend version, but for now, the application is not 100% complete, because I developed what was necessary to the presentation of the project, but we will work to complete it.",
+                "screenshot": "assets/images/screenshots/wb_mobile_login_screenshot.jpg",
+                "ferramentas": {
+                    "frontend": "Flutter",
+                    "backend": "Laravel",
+                    "database": "MySQL"
+                },
+                "link": "",
+                "repositoryGitHub": "https://github.com/LAISRCROFT/wb-flutter-v1",
+                "typeImage": 2,
+                "width": 70,
+                "width_md": 50
+            }
+        ]
     }
 }

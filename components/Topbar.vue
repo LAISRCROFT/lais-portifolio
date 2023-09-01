@@ -82,7 +82,6 @@
       },
       watch: {
         showSidebar() {
-          console.log("showSidebar ", this.showSidebar)
           eventBus.$emit('att-dropdown', this.showSidebar);
         }
       },
