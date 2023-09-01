@@ -571,5 +571,9 @@
                 "width_md": 50
             }
         ]
+    },
+    "contacts": {
+        "title": "Contatos",
+        "description": "Conheçam e sigam as minhas redes sociais e acompanhe o meu trabalho!"
     }
 }

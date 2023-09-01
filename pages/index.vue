@@ -18,6 +18,7 @@
         <Experience id="section_experiences" />
         <Skills id="section_skills" />
         <Projects id="section_projects" />
+        <Contacts id="section_contacts" />
     </div>
     <!-- <div>
         <TypeWriter />

@@ -571,5 +571,9 @@
                 "width_md": 50
             }
         ]
+    },
+    "contacts": {
+        "title": "Contacts",
+        "description": "Meet and follow my social media and follow my work!"
     }
 }
