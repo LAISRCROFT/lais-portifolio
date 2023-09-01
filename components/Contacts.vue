@@ -11,7 +11,7 @@
             </div>
             <div class="mt-5 offset-2 col-8 col-icones">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-3 mb-5 text-center d-flex justify-content-center" v-for="(contact, i) in contacts" :key="i" >
+                    <div class="col-5 col-sm-4 col-md-3 mb-5 text-center d-flex justify-content-center" v-for="(contact, i) in contacts" :key="i" >
                         <!-- <img :src="require(`@/${contact.image}`)" class="icons-social-media" v-tooltip.top="`${contact.label}`"/> -->
                         <a :href="`${contact.link}`" target="_blank" v-tooltip.top="`${contact.label}`">
                             <svg
