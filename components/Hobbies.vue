@@ -603,7 +603,6 @@
                 this.expandedAll = false
                 setTimeout(() => {
                     this.i18n = this.$i18n.about
-                    console.log(this.i18n)
                     this.selectLanguageHobbies()
                 }, 500)
             });

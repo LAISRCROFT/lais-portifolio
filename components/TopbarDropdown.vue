@@ -38,7 +38,6 @@
       eventBus.$on('att-dropdown', async(option) => {
           setTimeout(() => {
               this.showSidebar = option
-              console.log(this.showSidebar)
           }, 100)
       });
     },

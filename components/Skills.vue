@@ -153,7 +153,7 @@
                             {{ i18n.skills.labels.banco_de_dados }}
                         </h2>
                     </div>
-                    <div class="offset-1 offset-lg-0 col-10 offset-xl-0 col-xl-7 offset-xxl-1 mt-5 col-banco-dados">
+                    <div class="offset-1 offset-lg-0 col-10 offset-xl-0 col-xl-7 offset-xxl-0 mt-5 col-banco-dados">
                         <div class="row d-flex justify-content-center">
                             <div class="col-12 col-md-6" v-for="(banco, i) in skills.banco_de_dados" :key="i">
                                 <div class="row mb-3">
@@ -176,7 +176,7 @@
                             {{ i18n.skills.labels.hardware_e_infraestrutura }}
                         </h2>
                     </div>
-                    <div class="offset-1 offset-lg-0 col-10 offset-xl-0 col-xl-7 offset-xxl-1 mt-5 col-banco-dados">
+                    <div class="offset-1 offset-lg-0 col-10 offset-xl-0 col-xl-7 offset-xxl-0 mt-5 col-banco-dados">
                         <div class="row">
                             <div class="col-12 col-md-6" v-for="(hardware, i) in skills.hardware_e_infraestrutura" :key="i">
                                 <div class="row mb-3">
@@ -237,10 +237,8 @@
             eventBus.$on('att-idioma', async(option) => {
                 this.selectedOption = option;
                 setTimeout(() => {
-                    console.log("skills: ", this.$i18n.skills)
                     this.i18n = this.$i18n.skills
                     this.skills = this.$i18n.skills.skills
-                    console.log(this.skills)
                 }, 500)
             });
         },

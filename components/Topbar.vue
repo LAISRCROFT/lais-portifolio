@@ -6,8 +6,7 @@
       <Button :label="i18n.experiences" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_experiences')"/>
       <Button :label="i18n.skills" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_skills')"/>
       <Button :label="i18n.projects" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_projects')"/>
-
-      <Button :label="i18n.contacts" class="buttons-menu d-none d-lg-block" />
+      <Button :label="i18n.contacts" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_contacts')"/>
       <button 
         class="navbar-toggler menu-button-sidebar d-block d-lg-none" 
         type="button" 
@@ -53,13 +52,13 @@
                 <a class="nav-link active" href="javascript:void(0)" @click="scrollToSection('section_experiences', event)">{{i18n.experiences}}</a>
               </li>
               <li class="nav-item itens-sidebar">
-                <a class="nav-link active" href="javascript:void(0)" @click="scrollToSection('section_projects', event)">{{i18n.projects}}</a>
-              </li>
-              <li class="nav-item itens-sidebar">
                 <a class="nav-link active" href="javascript:void(0)" @click="scrollToSection('section_skills', event)">{{i18n.skills}}</a>
               </li>
               <li class="nav-item itens-sidebar">
-                <a class="nav-link active" href="javascript:void(0)">{{i18n.contacts}}</a>
+                <a class="nav-link active" href="javascript:void(0)" @click="scrollToSection('section_projects', event)">{{i18n.projects}}</a>
+              </li>
+              <li class="nav-item itens-sidebar">
+                <a class="nav-link active" href="javascript:void(0)" @click="scrollToSection('section_contacts', event)">{{i18n.contacts}}</a>
               </li>
             </ul>
           </div>
@@ -82,7 +81,6 @@
       },
       watch: {
         showSidebar() {
-          console.log("showSidebar ", this.showSidebar)
           eventBus.$emit('att-dropdown', this.showSidebar);
         }
       },

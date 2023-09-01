@@ -56,10 +56,8 @@
             eventBus.$on('att-idioma', async(option) => {
                 this.selectedOption = option;
                 setTimeout(() => {
-                    console.log("education: ", this.$i18n.education)
                     this.i18n = this.$i18n.education
                     this.formacoes = this.$i18n.education.formacoes
-                    console.log(this.formacoes)
                 }, 500)
             });
         },
