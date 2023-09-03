@@ -143,16 +143,18 @@
 
         .artists {
             .avatar-artists {
-                width: 120px;
-                height: 109px;
+                // width: 120px;
+                // height: 109px;
+                width: 3em;
+                height: 2.8em;
                 margin: -67px 0 0 0;
                 box-shadow: 6px 5px 9px 0px #00000042;
                 transition: width 0.2s ease, height 0.2s ease; 
                 cursor: pointer;
-                &:hover {
-                    width: 20%;
-                    height: 98%;
-                }
+                // &:hover {
+                //     width: 20%;
+                //     height: 98%;
+                // }
             }
             .card-artists {
                 height: auto;
@@ -164,7 +166,7 @@
                 h1 {
                     text-align: end;
                     text-transform: uppercase;
-                    font-size: 1.5em;
+                    font-size: 1em;
                     font-family: 'Poppins';
                     font-weight: bold;
                     padding: 6px 9px 0 0;
@@ -190,7 +192,8 @@
                         margin-bottom: 0;
                     }
                     .chip-bests-album {
-                        padding: 0 25px;
+                        // padding: 0 25px;
+                        padding: 0 14px;
                         height: 22px;
                         font-size: 10px;
                         font-family: 'Poppins';
@@ -207,7 +210,8 @@
                     }
                     .chip-bests-music {
                         text-align: start;
-                        padding: 0 25px;
+                        // padding: 0 25px;
+                        padding: 0 14px;
                         height: 22px;
                         font-size: 10px;
                         font-family: 'Poppins';
@@ -293,6 +297,9 @@
                 }
                 .card-artists {
                     width: 90%;
+                    h1 {
+                        font-size: 1.5em;
+                    }
                     .best-album {
                         .chip-bests-album {
                             font-size: 10px;

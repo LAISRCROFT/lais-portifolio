@@ -2,7 +2,7 @@
     <div class="hobbies">
         <div class="row">
             <div class="offset-1 offset-xxl-2 col-10 col-xxl-8 mt-1">
-                <div class="row organiza-row-hobbies">
+                <div class="row organiza-row-hobbies" id="section_up">
                     <Transition name="slide-fade">
                         <div class="col-12 align-switchs mb-4" v-if="!showGallery && !showAnimes && !showGames && !showArtists">
                             <span class="mr-1">{{ i18n.interests_and_hobbies.switches.color }}</span><InputSwitch v-model="color" class="mr-4"/><br >
@@ -31,7 +31,7 @@
                     </Transition>
                     
                     <!-- CONTENTS -->
-                    <div class="galerias">
+                    <div class="galerias" id="scroll_galery">
                         <Galleria :value="images_galery" :activeIndex.sync="activeIndexThumb" :responsiveOptions="responsiveOptions" :numVisible="7" containerStyle="max-width: 850px"
                             :circular="true" :fullScreen="true" :showItemNavigators="true" :showThumbnails="false" :visible.sync="displayCustom">
                             <template #item="slotProps">
@@ -75,7 +75,7 @@
                     </div>
 
                     <div class="animes" v-if="showAnimes">
-                        <div class="row d-flex justify-content-center">
+                        <div class="row d-flex justify-content-center" id="scroll_animes">
                             <div class="col-12 text-end mb-2">
                                 <Button icon="pi pi-arrow-left" class="p-button-rounded button-back" @click="showAnimes = false;" />
                             </div>
@@ -97,7 +97,7 @@
                     </div>
 
                     <div class="games" v-if="showGames">
-                        <div class="row d-flex justify-content-center">
+                        <div class="row d-flex justify-content-center" id="scroll_games">
                             <div class="col-12 text-end mb-2">
                                 <Button icon="pi pi-arrow-left" class="p-button-rounded button-back" @click="showGames = false;" />
                             </div>
@@ -119,7 +119,7 @@
                     </div>
 
                     <div class="artists" v-if="showArtists">
-                        <div class="row d-flex justify-content-center">
+                        <div class="row d-flex justify-content-center" id="scroll_artists">
                             <div class="col-12 text-end mb-2">
                                 <Button icon="pi pi-arrow-left" class="p-button-rounded button-back" @click="showArtists = false;" />
                             </div>
@@ -399,12 +399,20 @@
                         "top": 3
                     },
                     {
+                        "itemImageSrc": "assets/images/artists/8.jpg",
+                        "title": "Aimer",
+                        "generos": ["J-pop"],
+                        "bestAlbum": "Dawn",
+                        "bestMusic": "Last Stardust",
+                        "top": 4
+                    },
+                    {
                         "itemImageSrc": "assets/images/artists/4.jpeg",
                         "title": "Citizen Soldier",
                         "generos": ["Rock"],
                         "bestAlbum": "Scarecrow",
                         "bestMusic": "Bitter",
-                        "top": 4
+                        "top": 5
                     },
                     {
                         "itemImageSrc": "assets/images/artists/5.jpg",
@@ -412,7 +420,7 @@
                         "generos": ["Rock", "Metal"],
                         "bestAlbum": "Fallen",
                         "bestMusic": "My Imortal",
-                        "top": 5
+                        "top": 6
                     },
                     {
                         "itemImageSrc": "assets/images/artists/6.jpg",
@@ -420,7 +428,7 @@
                         "generos": ["Rock"],
                         "bestAlbum": "Awake",
                         "bestMusic": "Awake and Alive",
-                        "top": 6
+                        "top": 7
                     },
                     {
                         "itemImageSrc": "assets/images/artists/7.jpg",
@@ -428,14 +436,6 @@
                         "generos": ["K-pop"],
                         "bestAlbum": "SQUARE UP",
                         "bestMusic": "DDU-DU DDU-DU",
-                        "top": 7
-                    },
-                    {
-                        "itemImageSrc": "assets/images/artists/8.jpg",
-                        "title": "Aimer",
-                        "generos": ["J-pop"],
-                        "bestAlbum": "Dawn",
-                        "bestMusic": "Last Stardust",
                         "top": 8
                     },
                     {
@@ -751,29 +751,48 @@
                 ]
             },
             showContent(i, imagem) {
-                console.log(imagem)
                 if (imagem.id == 4) {
                     this.activeIndex[i] = i
                     this.showGallery = true
+                    setTimeout(() => {
+                        this.scrollToSection("scroll_galery")
+                    }, 800)
                 }
                 else if (imagem.id == 1) {
                     this.activeIndex[i] = i
                     this.showAnimes = true
+                    setTimeout(() => {
+                        this.scrollToSection("scroll_animes")
+                    }, 800)
                 }
                 else if (imagem.id == 6) {
                     this.activeIndex[i] = i
                     this.showGames = true
+                    setTimeout(() => {
+                        this.scrollToSection("scroll_games")
+                    }, 800)
                 }
                 else if (imagem.id == 7) {
                     this.activeIndex[i] = i
                     this.showArtists = true
+                    setTimeout(() => {
+                        this.scrollToSection("scroll_artists")
+                    }, 800)
                 }
                 this.expandedAll = false
             },
             imageClick(index) {
                 this.activeIndexThumb = index;
                 this.displayCustom = true;
-            }
+            },
+            
+            scrollToSection(sectionId) {
+                console.log(sectionId)
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            },
         },
         mounted() {
             
