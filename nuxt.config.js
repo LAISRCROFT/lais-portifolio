@@ -68,5 +68,9 @@ export default {
   build: {
     // https://github.com/primefaces/primevue/issues/844
     transpile: ['primevue'],
-  }
+  },
+  server: {
+      host: '0.0.0.0',
+      port: 7000
+  },
 }

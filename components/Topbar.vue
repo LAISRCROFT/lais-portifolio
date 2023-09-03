@@ -1,14 +1,16 @@
 <template>
     <div class="topbar" :class="{ 'colored-text': color }">
-      <Button :label="i18n.home" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_home')"/>
-      <Button :label="i18n.about" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_about')"/>
-      <Button :label="i18n.education" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_education')"/>
-      <Button :label="i18n.experiences" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_experiences')"/>
-      <Button :label="i18n.skills" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_skills')"/>
-      <Button :label="i18n.projects" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_projects')"/>
-      <Button :label="i18n.contacts" class="buttons-menu d-none d-lg-block" @click="scrollToSection('section_contacts')"/>
+      <Button :label="i18n.home" class="buttons-menu d-none d-xl-block" @click="scrollToSection('section_home')"/>
+      <Button :label="i18n.about" class="buttons-menu d-none d-xl-block" @click="scrollToSection('section_about')"/>
+      <Button :label="i18n.education" class="buttons-menu d-none d-xl-block" @click="scrollToSection('section_education')"/>
+      <Button :label="i18n.experiences" class="buttons-menu d-none d-xl-block" @click="scrollToSection('section_experiences')"/>
+      <Button :label="i18n.skills" class="buttons-menu d-none d-xl-block" @click="scrollToSection('section_skills')"/>
+      <Button :label="i18n.projects" class="buttons-menu d-none d-xl-block" @click="scrollToSection('section_projects')"/>
+      <Button :label="i18n.contacts" class="buttons-menu d-none d-xl-block" @click="scrollToSection('section_contacts')"/>
+      <Button class="buttons-menu d-block d-xl-none"/>
+      
       <button 
-        class="navbar-toggler menu-button-sidebar d-block d-lg-none" 
+        class="navbar-toggler menu-button-sidebar d-block d-xl-none" 
         type="button" 
         data-bs-toggle="offcanvas" 
         data-bs-target="#staticBackdrop" 

@@ -233,31 +233,6 @@
         },
         "experiences": [
             {
-                "title": "CNK Salgados",
-                "cargo": "Atendente",
-                "datas": ["06/2019", "12/2019"],
-                "localidade": "Brasil",
-                "funcoes": [
-                    "Organização",
-                    "Limpeza",
-                    "Atendimento ao cliente"
-                ],
-                "aprendizado": [
-                    {
-                        "title": "Atendimento ao cliente",
-                        "score": 70
-                    },
-                    {
-                        "title": "Conversação",
-                        "score": 30
-                    }
-                ],
-                "comentario": {
-                    "comentario": "Essa foi a minha primeira experiência no mercado de trabalho, e desenvolvi melhor minha interação com as pessoas e senso de trabalho. Foi muito bom para mim.",
-                    "rating": 4
-                }
-            },
-            {
                 "title": "Potencial Loterias",
                 "cargo": "Suporte Técnico",
                 "datas": ["12/2019", "07/2021"],

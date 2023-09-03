@@ -233,31 +233,6 @@
         },
         "experiences": [
             {
-                "title": "CNK Salgados",
-                "cargo": "Asistente",
-                "datas": ["06/2019", "12/2019"],
-                "localidade": "Brasil",
-                "funcoes": [
-                    "Organización",
-                    "Limpieza",
-                    "Atención al cliente"
-                ],
-                "aprendizado": [
-                    {
-                        "title": "Servicio al cliente",
-                        "score": 70
-                    },
-                    {
-                        "title": "Conversación",
-                        "score": 30
-                    }
-                ],
-                "comentario": {
-                    "comentario": "Esta fue mi primera experiencia en el mercado laboral, y desarrollé mejor mi interacción con las personas y mi sentido del trabajo. Fue muy bueno para mí.",
-                    "rating": 4
-                }
-            },
-            {
                 "title": "Potencial Loterias",
                 "cargo": "Soporte Técnico",
                 "datas": ["12/2019", "07/2021"],
