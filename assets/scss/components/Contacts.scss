@@ -1,6 +1,9 @@
 .contacts {
     background: linear-gradient(280deg, #b8b8e8 0%, #f1f1f9 100%);
     padding-top: 3%;
+    p, span, h1, h2, h3, h4, h5 {
+        font-family: "Poppins";
+    }
     .h2-title {
         text-align: center;
         color: #4a4a8d8f;
