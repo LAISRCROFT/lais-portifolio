@@ -1,0 +1,42 @@
+@import '../../variables';
+
+.typewriter {
+    .dama {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        margin: auto;
+        top: 26%;
+        right: 0;
+        left: 0;
+        border-radius: 3px;
+        font-family: monospace;
+        color: #000;
+        font-size: 5em;
+        padding: 0 20%;
+    }
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #a6a6ffbf;
+        border-radius: 3px;
+        font-family: monospace;
+        color: #FFF;
+        font-size: 3em;
+        padding: 0 20%;
+    }
+}
+body {
+    background-image: url(https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-fill-mode: forwards;
+}

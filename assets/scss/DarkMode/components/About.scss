@@ -1,18 +1,24 @@
-.about {
+.about_dark {
     padding-top: 4%;
+    background: #161521;
     
     p, span, h1, h2, h3, h4, h5 {
         font-family: "Poppins";
+        color: #d7d3ee;
+    }
+    hr {
+        color: #FFF;
     }
     .h2-title {
         text-align: center;
         font-family: "Poppins";
-        text-transform: uppercase; 
+        text-transform: uppercase;    
         letter-spacing: 2px;
+        color: #ebebff8f;
     }
     .foto {
         width: 70%;
-        -webkit-box-shadow: 19px 19px 0px 0px rgba(0, 0, 0, 0.1), 13px 13px 0px -3px rgb(255, 255, 255), 18px 17px 0px -3px rgb(130, 131, 197);
+        -webkit-box-shadow: 19px 19px 0px 0px #0000001a, 13px 13px 0px -3px #1a1321, 18px 17px 0px -3px #3b2d75;
         border-radius: 28px;
     }
     .galeria {
@@ -38,7 +44,7 @@
     .p-about {
         letter-spacing: 1px;
     }
-    .basic-informations {
+    .basic-informations_dark {
         font-family: "Poppins";
         letter-spacing: 1px;
         // border: solid 1px #07070a;
@@ -74,17 +80,17 @@
     background: #d2d2f0;
 }
 @media screen and (min-width: 576px) {
-    .about {
+    .about_dark {
         .foto {
-            -webkit-box-shadow: 19px 19px 0px 0px rgba(0, 0, 0, 0.1), 13px 13px 0px -3px rgb(255, 255, 255), 30px 31px 0px -3px rgb(130, 131, 197);
+            -webkit-box-shadow: 19px 19px 0px 0px #0000001a, 13px 13px 0px -3px #1a1321, 30px 31px 0px -3px #3b2d75;
         }
     }
 }
 @media screen and (min-width: 992px){
-    .about {
+    .about_dark {
         .foto {
             width: 70%; 
-            -webkit-box-shadow: 30px 32px 0px 0px rgba(0,0,0,0.1), 23px 25px 0px -3px rgba(255 255 255), 47px 48px 0px -3px rgb(130 131 197);
+            -webkit-box-shadow: 30px 32px 0px 0px #0000001a, 23px 25px 0px -3px #1a1321, 47px 48px 0px -3px #3b2d75;
         }
     }
 }

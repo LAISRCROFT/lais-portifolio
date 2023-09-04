@@ -1,5 +1,5 @@
 <template>
-    <div class="experience">
+    <div :class="{'experience': !isDarkMode, 'experience_dark': isDarkMode}">
         <div class="row my-5">
             <div class="col-12">
                 <h2 class="h2-title">{{ i18n.title }}</h2>
@@ -56,6 +56,7 @@
         data() {
             return {
                 i18n: {},
+                isDarkMode: false,
                 selectedOption: '',
                 active: 0,
                 value2: 50,
@@ -70,6 +71,11 @@
                     this.i18n = this.$i18n.experiences
                 }, 500)
             });
+            eventBus.$on('att-darkmode', async (option) => {
+                setTimeout(async() => {
+                    this.isDarkMode = option
+                }, 500);
+            });
         },
         methods: {
             toggle(event) {
@@ -83,6 +89,7 @@
 
 <style lang="scss" scoped>
     @import '~/assets/scss/components/Experience.scss';
+    @import '~/assets/scss/DarkMode/components/Experience.scss';
 
     .tabview-custom {
         i, span {

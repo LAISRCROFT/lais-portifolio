@@ -1,5 +1,5 @@
 <template>
-    <div class="hobbies">
+    <div :class="{'hobbies': !isDarkMode, 'hobbies_dark': isDarkMode}">
         <div class="row">
             <div class="offset-1 offset-xxl-2 col-10 col-xxl-8 mt-1">
                 <div class="row organiza-row-hobbies" id="section_up">
@@ -11,7 +11,7 @@
                     </Transition>
                     <Transition name="slide-fade" >
                         <div class="row d-flex justify-content-center" v-if="!showGallery && !showAnimes && !showGames && !showArtists">
-                            <div :class="{ 'col-12': !imagem.collapsed, 'col-6': imagem.collapsed }" class="col-sm-5 col-md-4 col-lg-3 mt-3 col-imagens-icons" v-for="(imagem, i) in hobbies" :key="i">
+                            <div :class="{ 'col-12': !imagem.collapsed, 'col-6': imagem.collapsed }" class="col-sm-5 col-md-4 col-lg-3 mt-4 col-imagens-icons" v-for="(imagem, i) in hobbies" :key="i">
                                 <img 
                                     :src="require(`@/${color ? imagem.iconPNG : imagem.iconSVG}`)" 
                                     :class="{'imagens-icons': !color, 'imagens-icons-png': color, 'image-collapsed-12': !imagem.collapsed}"
@@ -463,6 +463,7 @@
                 showAnimes: false,
                 showArtists: false,
                 showGames: false,
+                isDarkMode: false,
                 activeIndex: [],
                 activeIndexThumb: 0,
                 isCollapsed: [],
@@ -605,6 +606,11 @@
                     this.i18n = this.$i18n.about
                     this.selectLanguageHobbies()
                 }, 500)
+            });
+            eventBus.$on('att-darkmode', async (option) => {
+                setTimeout(async() => {
+                    this.isDarkMode = option
+                }, 500);
             });
         },
         watch: {
@@ -802,6 +808,7 @@
   
 <style lang="scss">
 @import '~/assets/scss/components/Hobbies.scss';
+@import '~/assets/scss/DarkMode/components/Hobbies.scss';
 
 .slide-fade-enter-active {
   transition: all 0.3s ease-out;

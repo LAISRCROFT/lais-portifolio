@@ -1,12 +1,14 @@
-.skills {
-    background: linear-gradient(280deg, #b8b8e8 0%, #f1f1f9 100%);
+@import '../../variables';
+
+.skills_dark {
+    background: linear-gradient(280deg, #000028 0%, #515182 100%);
     padding-top: 3%;
     p, span, h1, h2, h3, h4, h5 {
         font-family: "Poppins";
     }
     .h2-title {
         text-align: center;
-        color: #4a4a8d8f;
+        color: $education_h2_title_dark;
         letter-spacing: 8px;
         text-transform: uppercase;
     }
@@ -17,7 +19,7 @@
         .div-text {
             p {
                 font-family: 'Poppins';
-                color: #7576b1;
+                color: #d8d8fb;
                 text-align: justify;
             }
         }
@@ -26,7 +28,7 @@
                 .title-knobs {
                     h2 {
                         text-align: center;
-                        color: #8787b9;
+                        color: #b3b3c9;
                         font-size: 1.5em;
                         font-family: 'Poppins';
                         font-weight: 300;
@@ -36,7 +38,7 @@
                 .knobs {
                     p {
                         font-family: 'Poppins';
-                        color: #8787b9;
+                        color: #c2c2ea;
                         // text-transform: uppercase;
                     }
                     .cols-knobs-label {
@@ -48,7 +50,7 @@
                 }
                 .col-banco-dados {
                     h2 {
-                        color: #8787b9;
+                        color: #b5b5e1;
                         font-size: 1em;
                         font-family: "Poppins";
                         font-weight: 300;
@@ -63,7 +65,7 @@
                 // background: linear-gradient(280deg, #d4d4f5 0%, #ffffff 100%);
                 .title-knobs-frameworks {
                     h2 {
-                        color: #8787b9;
+                        color: #a7b3c9;
                         font-size: 1.8em;
                         font-family: "Poppins";
                         font-weight: 300;
@@ -94,7 +96,7 @@
                                         // margin-right: 20px;
                                         margin: 0;
                                         font-family: 'Poppins';
-                                        color: #8787b9;
+                                        color: #bebedd;
                                     }
                                     .icon-rating-frameworks {
                                         margin-right: 4px; 
@@ -121,8 +123,8 @@
                         }
                     }
                     &:hover {
-                        background-color: #d1d1e9;
-                        border-radius: 6%;
+                        background-color: #7272a9ab;
+                        border-radius: 30px;
                         padding-bottom: 2%;
                     }
                 }
@@ -140,7 +142,7 @@
     }
 }
 @media screen and (min-width: 992px) {
-    .skills {
+    .skills_dark {
         .div-skills {
             .col-knobs {
                 .col-row-knobs {
@@ -165,12 +167,12 @@
     }
 }
 @media screen and (min-width: 1200px) {
-    .skills {
+    .skills_dark {
         .div-skills {
             .col-knobs {
                 .col-row-knobs-2 {
                     .row-frameworks-alinhamento-2 {
-                        background-color: #d1d1e9;
+                        background-color: #7272a9ab;
                         border-radius: 30px;
                         padding-bottom: 2%;
                     }

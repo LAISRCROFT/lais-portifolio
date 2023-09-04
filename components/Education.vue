@@ -1,5 +1,5 @@
 <template>
-    <div class="education">
+    <div :class="{'education': !isDarkMode, 'education_dark': isDarkMode}">
         <div class="row mb-5">
             <div class="col-12">
                 <h2 class="h2-title">{{ i18n.title }}</h2>
@@ -46,6 +46,7 @@
             return {
                 i18n: {},
                 selectedOption: '',
+                isDarkMode: false,
                 formacoes: [],
             }
         },
@@ -60,6 +61,11 @@
                     this.formacoes = this.$i18n.education.formacoes
                 }, 500)
             });
+            eventBus.$on('att-darkmode', async (option) => {
+                setTimeout(() => {
+                    this.isDarkMode = option
+                }, 500);
+            });
         },
         methods: {
             
@@ -71,4 +77,5 @@
 
 <style lang="scss" scoped>
     @import '~/assets/scss/components/Education.scss';
+    @import '~/assets/scss/DarkMode/components/Education.scss';
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="about">
+    <div :class="{'about': !isDarkMode, 'about_dark': isDarkMode}">
         <div class="row mb-5">
             <div class="col-12">
                 <h2 class="h2-title">{{ i18n.title }}</h2>
@@ -176,6 +176,7 @@
                 ],
                 displayBasic2: false,
                 allImagesLoaded: false,
+                isDarkMode: false,
                 isCollapsed: true,
                 selectedOption: '',
                 i18n: {}
@@ -188,6 +189,11 @@
                 setTimeout(() => {
                     this.i18n = this.$i18n.about
                 }, 500)
+            });
+            eventBus.$on('att-darkmode', async (option) => {
+                setTimeout(async() => {
+                    this.isDarkMode = option
+                }, 500);
             });
         },
         mounted() {
@@ -209,5 +215,6 @@
   
 <style lang="scss">
 @import '~/assets/scss/components/About.scss';
+@import '~/assets/scss/DarkMode/components/About.scss';
 
 </style>

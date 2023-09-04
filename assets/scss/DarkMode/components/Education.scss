@@ -1,25 +1,25 @@
-@import '../variables';
+@import '../../variables';
 
-.education {
-    background: $education_background_light;
+.education_dark {
+    background: $education_background_dark;
     padding-top: 3%;
     p, span, h1, h2, h3, h4, h5 {
         font-family: "Poppins";
     }
     .h2-title {
         text-align: center;
-        color: $education_h2_title_light;
+        color: $education_h2_title_dark;
         letter-spacing: 8px;
         text-transform: uppercase;
     }
     .customized-timeline {
         .card-timeline {
-            box-shadow: 8px 7px 18px 0px #b8b8e8;
+            box-shadow: 8px 7px 18px 0px #0202022e;
             transition: background-color 0.3s ease;
             cursor: pointer;
             &:hover {
                 animation: 500ms;
-                background-color: #f2f2ff;
+                background-color: #f2f2ff36;
             }
             .certificados-icon {
                 transition: color 0.6s ease;
@@ -42,13 +42,13 @@
         height: 2rem;
         align-items: center;
         justify-content: center;
-        color: #ffffff;
+        color: #2a2b4d;
         border-radius: 50%;
         z-index: 0;
         transition: color 0.2s ease;
         cursor: pointer;
         &:hover {
-            color: #2a2b4d;
+            color: #FFF;
         }
     }
 

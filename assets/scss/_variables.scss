@@ -1,0 +1,24 @@
+// **** LIGHT MODE ****
+
+    // INDEX
+    $filter_background_light: none;
+
+    // ABOUT
+
+    // EDUCATION
+    $education_background_light: linear-gradient(280deg, #b8b8e8 0%, #f1f1f9 100%);
+    $education_h2_title_light: #4a4a8d8f;
+    $education_card_timeline_box_shadow: 8px 7px 18px 0px #b8b8e8;
+
+// **** DARK MODE ****
+
+    // INDEX
+    $filter_background_dark: none;
+    // $filter_background_dark: brightness(0.5);
+
+    // ABOUT
+
+    // EDUCATION
+    $education_background_dark: linear-gradient(280deg, #000028 0%, #515182 100%);
+    $education_h2_title_dark: #ebebff8f;
+    $education_card_timeline_box_shadow: 8px 7px 18px 0px #00000038;

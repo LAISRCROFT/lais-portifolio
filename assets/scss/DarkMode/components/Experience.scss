@@ -1,0 +1,88 @@
+@import '../../variables';
+
+.experience_dark {
+    background: #161521;
+    p, span, h1, h2, h3, h4, h5 {
+        font-family: "Poppins";
+    }
+    .h2-title {
+        text-align: center;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        color: #ebebff8f;
+    }
+    .div-painels {
+        .painel-experiences {
+            .card-tabview {
+                padding: 1% 1%;
+                background: #ffffff0f;
+                .painel-experiences-title {
+                    margin-bottom: 0;
+                    font-family: 'Poppins';
+                    color: #cdccce;
+                }
+                .painel-experiences-subtitle {
+                    color: #979798;
+                    font-weight: bold;
+                    font-size: 13px;
+                    letter-spacing: 1px;
+                }
+                .tabview-custom {
+                    .div-chip-experiences-funcoes {
+                        .chip-experiences-funcoes {
+                            background-image: linear-gradient(90deg, #392f50 0%, #24232e 100%);
+                            font-size: 14px;
+                            font-family: "Poppins";
+                            color: #c1c1d5;
+                            transition: background-color 0.5s ease, padding-left 1s ease, padding-right 1s ease;
+                            cursor: pointer;
+                            &:hover {
+                                background: linear-gradient(90deg, #524570 0%, #24232e 100%);
+                                padding-left: 20px;
+                                padding-right: 20px;
+                            }
+                        }
+                    }
+                    .experiences-aprendizado {
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        .experiences-aprendizado-span-title {
+                            font-family: 'Poppins';
+                            font-size: .85em;
+                            margin: 0;
+                            color: #aaa4bd;
+                        }
+                        &:hover {
+                            background: #ee77ee12;
+                        }
+                    }
+                    .tabpanel-comentario {
+                        p {
+                            font-family: 'Poppins';
+                            font-size: .95em;
+                            letter-spacing: 1px;
+                            color: #d4d0e2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .experience_dark {
+        .div-painels {
+            .painel-experiences {
+                .tabview-custom {
+                    .div-chip-experiences-funcoes {
+                        .chip-experiences-funcoes {
+                            background-image: linear-gradient(90deg, #f8f8ff 0%, #f6f6ff 100%);
+                            height: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}

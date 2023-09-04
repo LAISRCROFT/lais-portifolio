@@ -1,5 +1,5 @@
 <template>
-    <div class="skills">
+    <div :class="{'skills': !isDarkMode, 'skills_dark': isDarkMode}">
         <div class="row mb-5">
             <div class="col-12">
                 <h2 class="h2-title">{{ i18n.title }}</h2>
@@ -228,6 +228,7 @@
                 i18n: {},
                 selectedOption: '',
                 skills: {},
+                isDarkMode: false,
             }
         },
         async created() {
@@ -241,6 +242,11 @@
                     this.skills = this.$i18n.skills.skills
                 }, 500)
             });
+            eventBus.$on('att-darkmode', async (option) => {
+                setTimeout(() => {
+                    this.isDarkMode = option
+                }, 500);
+            });
         },
         methods: {
             
@@ -252,4 +258,5 @@
 
 <style lang="scss" scoped>
     @import '~/assets/scss/components/Skills.scss';
+    @import '~/assets/scss/DarkMode/components/Skills.scss';
 </style>
