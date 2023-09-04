@@ -1,4 +1,6 @@
-.hobbies {
+@import '../../variables';
+
+.hobbies_dark {
     p, span, h1, h2, h3, h4, h5 {
         font-family: "Poppins";
     }
@@ -33,6 +35,7 @@
                 // background: #b8b8e8;
                 background: linear-gradient(90deg, #b8b8e8 0%, #cacaf0 100%);
                 padding: 7px;
+                filter: brightness(0.8);
                 /* border: solid 2px #000; */
                 border-radius: 100%;
                 cursor: pointer;
@@ -44,7 +47,8 @@
                 }
             }
             .title-divider {
-                background: #FFF;
+                background: #131324;
+                box-shadow: inset 0px 10px 0px #161521;
                 font-weight: 500;
                 padding: 0 6px;
             }
@@ -52,6 +56,8 @@
                 width: 74%;
                 cursor: pointer;
                 transition: width 0.3s ease;
+                background: #131324;
+                box-shadow: inset 0px 33px 0px #161521;
                 &:hover {
                     width: 25%;
                 }
@@ -88,6 +94,9 @@
                     }
                 }
             }
+            .card-galery {
+                background: #3f405f;
+            }
         }
         .animes, .games {
             .avatar-animes {
@@ -103,7 +112,7 @@
                 padding: 0 41px;
                 margin-left: calc(-4% - 4px);
                 border-radius: 0px 16px 16px 0px;
-                background: linear-gradient(88deg, rgb(223, 223, 223) 0%, rgb(219 219 247) 100%);
+                background: linear-gradient(90deg, rgb(116 108 135) 0%, rgb(64 64 117) 100%);
                 transition: padding 0.2s ease; 
                 font-family: 'Poppins';
                 font-size: 13px;
@@ -115,7 +124,7 @@
                 cursor: pointer;
                 padding: 0 41px;
                 margin-right: calc(5px - 4%);
-                background: linear-gradient(88deg, rgb(223, 223, 223) 0%, rgb(219 219 247) 100%);
+                background: linear-gradient(270deg, rgb(116, 108, 135) 0%, rgb(64, 64, 117) 100%);
                 border-radius: 16px 0 1px 16px;
                 transition: padding 0.2s ease;  
                 font-family: 'Poppins';
@@ -137,7 +146,7 @@
                 padding: 0 41px;
                 margin-left: calc(-4% - 4px);
                 border-radius: 0px 16px 16px 0px;
-                background: linear-gradient(88deg, rgb(223, 223, 223) 0%, rgb(219 219 247) 100%);
+                background: linear-gradient(90deg, rgb(116, 108, 135) 0%, rgb(64, 64, 117) 100%);
                 transition: padding 0.2s ease;  
                 font-family: 'Poppins';
                 font-size: 14px;
@@ -148,6 +157,7 @@
         }
 
         .artists {
+            z-index: 1;
             .avatar-artists {
                 // width: 120px;
                 // height: 109px;
@@ -169,6 +179,8 @@
                 z-index: -1;
                 margin: 0px 0 0px -54px;
                 transition: background-color 0.9s ease;
+                background: #232131;
+                border: solid 1px #ffffff73;
                 h1 {
                     text-align: end;
                     text-transform: uppercase;
@@ -177,7 +189,7 @@
                     font-weight: bold;
                     padding: 6px 9px 0 0;
                     padding: 6px 9px 0 0;
-                    background-image: linear-gradient(88deg, rgb(223, 223, 223) 0%, rgb(33 33 77) 100%);
+                    background-image: linear-gradient(88deg, rgb(255 255 255) 0%, rgb(129 114 175) 100%);
                     -webkit-background-clip: text;
                     background-clip: text;
                     color: transparent;
@@ -234,7 +246,7 @@
     }
 }
 @media screen and (min-width: 368px) {
-    .hobbies {
+    .hobbies_dark {
         .organiza-row-hobbies {
             .p-divider .p-divider-content {
                 background-color: transparent;
@@ -249,7 +261,7 @@
                 }
                 .imagens-icons-png {
                     width: 41%;
-                    background: #FFF;
+                    background: #131324;
                     // width: 42%;
                 }
             }
@@ -257,7 +269,7 @@
     }
 }
 @media screen and (max-width: 576px) {
-    .hobbies {
+    .hobbies_dark {
         .organiza-row-hobbies {
             .image-collapsed-12 {
                 width: 19% !important;
@@ -272,7 +284,7 @@
     }
 }
 @media screen and (min-width: 768px) {
-    .hobbies {
+    .hobbies_dark {
         .organiza-row-hobbies {
             .p-divider .p-divider-content {
                 background-color: transparent;
@@ -287,7 +299,7 @@
                 }
                 .imagens-icons-png {
                     width: 24%;
-                    background: #FFF;
+                    background: #131324;
                     // width: 42%;
                 }
             }
@@ -325,7 +337,7 @@
 }
 
 @media screen and (min-width: 992px) {
-    .hobbies {
+    .hobbies_dark {
         .organiza-row-hobbies {
             .artists {
                 .avatar-artists {

@@ -1,5 +1,5 @@
 <template>
-    <div class="basic-informations">
+    <div :class="{'basic-informations': !isDarkMode, 'basic-informations_dark': isDarkMode}">
         <!-- <p class="basics-infomations"> -->
             <div class="row">
                 <div class="col-12 col-md-5 flex align-items-center justify-content-center">
@@ -81,7 +81,8 @@
         name: 'Hobbies',
         data() {
             return {
-                i18n: {}
+                i18n: {},
+                isDarkMode: false,
             }
         },
         async created() {
@@ -91,6 +92,11 @@
                 setTimeout(() => {
                     this.i18n = this.$i18n.about
                 }, 500)
+            });
+            eventBus.$on('att-darkmode', async (option) => {
+                setTimeout(async() => {
+                    this.isDarkMode = option
+                }, 500);
             });
         },
         methods: {
@@ -103,12 +109,6 @@
   
 <style lang="scss" scoped>
 @import '~/assets/scss/components/About.scss';
-
-.custom-chip {
-    height: 20px;
-    font-size: 0.9em;
-    padding-bottom: 4px;
-    background: #cdcdf8;
-}
+@import '~/assets/scss/DarkMode/components/About.scss';
 
 </style>

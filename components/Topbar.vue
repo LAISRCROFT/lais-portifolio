@@ -1,16 +1,16 @@
 <template>
-    <div class="topbar" :class="{ 'colored-text': color }">
-      <Button :label="i18n.home" class="buttons-menu d-none d-xl-block" @click="scrollToSection('section_home')"/>
-      <Button :label="i18n.about" class="buttons-menu d-none d-xl-block" @click="scrollToSection('section_about')"/>
-      <Button :label="i18n.education" class="buttons-menu d-none d-xl-block" @click="scrollToSection('section_education')"/>
-      <Button :label="i18n.experiences" class="buttons-menu d-none d-xl-block" @click="scrollToSection('section_experiences')"/>
-      <Button :label="i18n.skills" class="buttons-menu d-none d-xl-block" @click="scrollToSection('section_skills')"/>
-      <Button :label="i18n.projects" class="buttons-menu d-none d-xl-block" @click="scrollToSection('section_projects')"/>
-      <Button :label="i18n.contacts" class="buttons-menu d-none d-xl-block" @click="scrollToSection('section_contacts')"/>
-      <Button class="buttons-menu d-block d-xl-none"/>
+    <div :class="{ 'colored-text': color, 'topbar': !isDarkMode, 'topbar_dark': isDarkMode }">
+      <Button :label="i18n.home" class="buttons-menu" @click="scrollToSection('section_home')"/>
+      <Button :label="i18n.about" class="buttons-menu" @click="scrollToSection('section_about')"/>
+      <Button :label="i18n.education" class="buttons-menu" @click="scrollToSection('section_education')"/>
+      <Button :label="i18n.experiences" class="buttons-menu" @click="scrollToSection('section_experiences')"/>
+      <Button :label="i18n.skills" class="buttons-menu" @click="scrollToSection('section_skills')"/>
+      <Button :label="i18n.projects" class="buttons-menu" @click="scrollToSection('section_projects')"/>
+      <Button :label="i18n.contacts" class="buttons-menu" @click="scrollToSection('section_contacts')"/>
+      <Button class="buttons-menu button-display"/>
       
       <button 
-        class="navbar-toggler menu-button-sidebar d-block d-xl-none" 
+        class="navbar-toggler menu-button-sidebar" 
         type="button" 
         data-bs-toggle="offcanvas" 
         data-bs-target="#staticBackdrop" 
@@ -77,6 +77,7 @@
         return {
           i18n: {},
           showSidebar: false,
+          isDarkMode: false,
           isScrolled: false,
           isScrolledIconSidebar: false,
         };
@@ -97,6 +98,11 @@
                 this.i18n = this.$i18n.topbar
             }, 500)
         });
+        eventBus.$on('att-darkmode', async (option) => {
+            setTimeout(() => {
+                this.isDarkMode = option
+            }, 500);
+        });
       },
       beforeDestroy() {
         
@@ -114,5 +120,6 @@
   
 <style lang="scss" scoped>
 @import '~/assets/scss/components/Topbar.scss';
+@import '~/assets/scss/DarkMode/components/Topbar.scss';
 
 </style>

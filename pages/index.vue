@@ -1,5 +1,5 @@
 <template>
-    <div class="index row">
+    <div class="row" :class="{'index': !isDarkMode, 'index_dark': isDarkMode}">
         <div>
             <TopbarDropdown @localizationChanged='localizationChanged' />
             <Topbar :color="isDivVisible" class="topbar-target"/>
@@ -34,6 +34,8 @@ export default {
         return {
             i18Controll: 0,
             selectedOption: '',
+            selectedOptionDarkMode: '',
+            isDarkMode: false,
             isDivVisible: false
         };
     },
@@ -49,6 +51,12 @@ export default {
             this.selectedOption = option;
             setTimeout(() => {
                 this.typeWriterEffect();
+            }, 500);
+        });
+        eventBus.$on('att-darkmode', async (option) => {
+            this.selectedOptionDarkMode = option;
+            setTimeout(() => {
+                this.isDarkMode = option
             }, 500);
         });
     },
@@ -86,11 +94,12 @@ export default {
 </script>
 <style lang="scss">
 @import '~/assets/scss/index.scss';
+@import '~/assets/scss/DarkMode/index.scss';
 
 /* Works on Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: blue orange;
+  scrollbar-color: #803f88 #ffffff;
 }
 
 /* Works on Chrome, Edge, and Safari */

@@ -1,0 +1,145 @@
+@import '../../variables';
+
+.projects_dark {
+    padding-top: 3%;
+    background: #161521;
+
+    p, span, h1, h2, h3, h4, h5 {
+        font-family: "Poppins";
+    }
+    .h2-title {
+        text-align: center;
+        color: #4a4a8d8f;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        color: #ebebff8f;
+    }
+    p, h2, span {
+        font-family: 'Poppins';
+    }
+    .div-projects {
+        .div-text {
+            p {
+                font-family: 'Poppins';
+                color: #bebedf;
+                text-align: justify;
+            }
+        }
+        .col-for-projects {
+            h2 {
+                text-transform: uppercase;
+                color: #d2d2f9;
+                font-family: 'Poppins';
+                letter-spacing: 4px;
+                cursor: pointer;
+                transition: text-shadow 0.3s ease;
+                &:hover {
+                    text-shadow: 1px 20px 4px #4e00ff26;
+                }
+            }
+            .div-screenshot {
+                .screenshot {
+                    border-radius: 40px;
+                    filter: brightness(100%) contrast(79%);
+                    cursor: pointer;
+                    box-shadow: 16px 20px 0px -13px #000000b8, 7px 27px 0px -11px #48285a;
+                    transition: box-shadow 0.3s ease;
+                    &:hover {
+                        box-shadow: 26px 14px 0px -2px #000000b8, -16px 44px 0px -18px #48285a;
+                    }
+                }
+            }
+            .div-details {
+                p {
+                    letter-spacing: 1px;
+                    color: #bfbcd2;
+                }
+                .col-table-ferramentas {
+                    .table-ferramentas {
+                        th {
+                            // width: 16%;
+                            font-family: 'Poppins';
+                            border-bottom: none;
+                            text-transform: uppercase;
+                            color: #aea5b2;
+                            background: #161521;
+                            // letter-spacing: 2px;
+                        }
+                        td {
+                            font-family: 'Poppins';
+                            border: none;
+                            background: #161521;
+                            .custom-chip {
+                                background: linear-gradient(280deg, #474792 0%, #552d61 100%);
+                                font-family: 'Poppins';
+                                color: #dadae2;
+                                padding: 0px 26px;
+                                height: 26px;
+                                text-transform: uppercase;
+                                font-size: .8em;
+                                cursor: pointer;
+                                transition: margin-top 0.3s ease;
+                                &:hover {
+                                    margin-top: 4px;
+                                }
+                            }
+                        }
+                        .define-width {
+                            width: 20%;
+                        }
+                    }
+                }
+                .col-icons {
+                    a {
+                        color: #000;
+                        .icon-github {
+                            font-size: 2em;
+                            cursor: pointer;
+                            transition: color 0.3s ease;
+                            margin: 0 20px 0 0;
+                            color: #9e9ed0;
+                            &:hover {
+                                color: #bfbfe3;
+                            }
+                        }
+                        .icon-globe {
+                            font-size: 2em;
+                            cursor: pointer;
+                            transition: color 0.3s ease;
+                            color: #9e9ed0;
+                            &:hover {
+                                color: #bfbfe3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ::-moz-selection { /* Code for Firefox */
+        color: black;
+        background: #d2d2f0;
+    }
+    
+    ::selection {
+        color: black;
+        background: #d2d2f0;
+    }
+}
+@media screen and (min-width: 1320px) {
+    .projects_dark {
+        .div-projects {
+            .col-for-projects {
+                .div-screenshot {
+                    .screenshot {
+                        box-shadow: 18px 20px 0px -8px #000000b8, 7px 38px 0px -10px #48285a;
+                        transition: box-shadow 0.3s ease;
+                        &:hover {
+                            box-shadow: 26px 14px 0px 4px #000000b8, -16px 44px 0px -10px #48285a;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
-@import './variables';
+@import '../variables';
 
-.index {
+.index_dark {
     width: 101%;
     height: 100vh;
     display: flex;
@@ -56,11 +56,11 @@
         background-repeat: no-repeat;
         z-index: -1;
         mix-blend-mode: difference;
-        filter: $filter_background_light;
+        filter: $filter_background_dark;
     }   
 }
 @media screen and (min-width: 1040px) {
-    .index {
+    .index_dark {
         .topo {
             .row-dama-title {
                 .col-dama-title {

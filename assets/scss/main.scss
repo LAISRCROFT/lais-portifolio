@@ -5,9 +5,13 @@
 
 //CUSTOMIZATIONS
 @import './customizations.scss';
+@import './DarkMode/customizations.scss';
 
 //FLAGS
 @import './flags.scss';
 
 //TOOLTIPS
 @import './tooltips.scss';
+
+//TOOLTIPS
+@import './variables.scss';

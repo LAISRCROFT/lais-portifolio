@@ -1,0 +1,50 @@
+@import '../../variables';
+
+.contacts_dark {
+    background: linear-gradient(280deg, #000028 0%, #515182 100%);
+    padding-top: 3%;
+    p, span, h1, h2, h3, h4, h5 {
+        font-family: "Poppins";
+    }
+    .h2-title {
+        text-align: center;
+        color: #4a4a8d8f;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+    }
+    .div-contacts {
+        .div-text {
+            p {
+                font-family: 'Poppins';
+                color: #c4c4e8;
+                text-align: justify;
+            }
+        }
+        .col-icones {
+            .icons-social-media {
+                width: 5em;
+                fill: url(#myGradientDark);
+                transition: margin-top 0.3s ease;
+                &:hover {
+                    margin-top: -21px;
+                }
+            }
+        }
+    }
+    .footer {
+        background: linear-gradient(280deg, #593681 0%, #6b66cf 100%);
+        span {
+            color: #FFF;
+        }
+    }
+    
+    ::-moz-selection {
+        color: #6e6eaa !important;
+        background: #ffffff78 !important;
+    }
+    
+    ::selection {
+        color: #6e6eaa !important;
+        background: #ffffff78 !important;
+    }
+}

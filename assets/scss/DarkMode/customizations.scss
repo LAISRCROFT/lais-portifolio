@@ -1,4 +1,6 @@
-.topbar {
+@import '../variables';
+
+.topbar_dark {
     .navbar-toggler {
         z-index: 1;
     }
@@ -12,16 +14,17 @@
     }
 }
 
-.about {
+.about_dark {
     .pi {
         font-family: 'primeicons' !important;
     }
     .p-panel .p-panel-header {
-        background: linear-gradient(88deg, #7576b1 0%, #babaee 100%);
+        background: linear-gradient(88deg, #3a3a56 0%, #40409b 100%);
         font-family: "Poppins";
         font-weight: 600;
         border-radius: 10px 10px 0px 0px;
         color: #FFF;
+        border: 1px solid #a8a4b957;
         .p-panel-header-icon {
             color: #FFF !important;
         }
@@ -29,25 +32,52 @@
     .p-panel .p-panel-content {
         padding-top: 10px;
         padding-bottom: 10px;
+        background: #10112685;
+        color: #c1c8ce;
         // border-radius: 10px;
     }
 }
 
-.basic-informations {
+.basic-informations_dark {
     .custom-chip {
         height: 20px;
         font-size: 0.9em;
         padding-bottom: 4px;
-        background: #cdcdf8;
+        background: #2c2c50;
+        color: #d6d6e4;
     }
 }
 
-.hobbies {
+.education_dark {
+    .p-card {
+        background: #ffffff29;
+    }
+    .p-card .p-card-title {
+        color: #b8c0ff;
+    }
+    .p-card .p-card-subtitle {
+        color: #c0d0dd;
+    }
+    .p-card .p-card-content {
+        color: #ffffff87;
+    }
+}
+
+.hobbies_dark {
+    .p-inputswitch .p-inputswitch-slider {
+        background: #433d54;
+    }
     .p-tooltip-top {
         z-index: 10;
     }
+    .p-chip .p-chip-text {
+        color: #e4daf1;
+    }
     .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
         background: #7576b1;
+    }
+    .p-inputswitch.p-inputswitch-checked:not(.p-disabled):hover .p-inputswitch-slider {
+        background: #432982;
     }
     .p-panel .p-panel-content {
         // padding-top: 10px;
@@ -98,18 +128,19 @@
     }
 }
 
-.experience {
+.experience_dark {
     .p-panel.p-panel-toggleable .p-panel-header {
         padding: 0.5rem 1rem;
-        background: linear-gradient(280deg, rgb(117 117 188) 0%, rgb(221, 221, 255) 100%);
+        background: linear-gradient(88deg, #554675 0%, #40409b 100%);
         color: #FFF;
         border: 0;
     }
     .p-panel .p-panel-content {
         border-top: 0 none;
         border: 0;
-        border-bottom: 1px solid #dcdcff;
+        border-bottom: 1px solid #626274;
         padding: 0.5% 0% 1% 0%;
+        background: #16152100;
         // background: #dcdcfe26;
     }
     .p-panel .p-panel-header .p-panel-header-icon {
@@ -117,7 +148,7 @@
     }
     .p-panel .p-panel-header .p-panel-title {
         font-weight: 600;
-        color: #55558d;
+        color: #cbcbe8;
         font-size: 1.1em;
         text-transform: uppercase;
         font-weight: bold;
@@ -132,8 +163,12 @@
         outline-offset: 0;
         box-shadow: none;
     }
+    .p-progressbar {
+        position: relative;
+        overflow: hidden;
+    }
     .p-progressbar .p-progressbar-value {
-        background: linear-gradient(90deg, #2196F3 0%, #914fd0 100%);
+        background: linear-gradient(90deg, #443786 0%, #914fd0 100%)
     }
     .p-progressbar-determinate .p-progressbar-label {
         font-size: 9px;
@@ -143,14 +178,39 @@
             font-size: 19px;
         }
     }
+    .p-tabview .p-tabview-nav {
+        background: #24232e;
+        border: 1px solid #dee2e64a;
+        border-width: 0 0 1px 0;
+    }
+    .p-tabview .p-tabview-panels {
+        background: #ffffff00;
+    }
+    .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+        background: #ffffff12;
+        border-color: #9863aa;
+        color: #9863aa;
+    }
+    .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+        background: #ffffff00;
+        color: #cdccce;
+    }
+    .p-tabview .p-tabview-nav li:not(.p-highlight):not(.p-disabled):hover .p-tabview-nav-link {
+        background: #51415e3b;
+        border-color: #6c757d;
+        color: #bdc4ca;
+    }
     .p-tabview .p-tabview-nav li {
         margin-right: 0;
         font-family: 'Poppins';
         font-size: .9em;
     }
+    .p-rating .p-rating-icon.pi-star-fill {
+        color: #796cd3;
+    }
 }
 
-.skills {
+.skills_dark {
     .p-knob-text {
         font-size: 1.3rem;
         text-align: center;
@@ -177,7 +237,7 @@
     background: #d2d2f0;
 }
 @media screen and (max-width: 576px) {
-    .hobbies .p-panel .p-panel-content {
+    .hobbies_dark .p-panel .p-panel-content {
         margin-top: -10%;
     }
 }
