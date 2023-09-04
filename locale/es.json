@@ -520,7 +520,7 @@
                 "description": "Le pidieron a mi grupo que desarrollara un sistema (de escritorio o web, elegimos web) y pronto pensamos en cuál sería más nuestra 'cara'. Un sitio de libros inspirado en la plataforma Wattpad, utilizado para fanfics e historias originales. . Tomé la parte del frontend y mi colega desarrolló el backend del sitio, mientras los otros miembros crearon prototipos y analizaron el flujo. En ese momento yo todavía era bastante principiante, así que terminé desarrollándome mejor.",
                 "screenshot": "assets/images/screenshots/wb_desktop_login_screenshot.jpg",
                 "ferramentas": {
-                    "frontend": "Quasar JS",
+                    "frontend": "Quasar",
                     "backend": "Laravel",
                     "database": "MySQL"
                 },
