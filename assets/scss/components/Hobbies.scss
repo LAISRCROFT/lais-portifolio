@@ -290,15 +290,21 @@
                     background: #FFF;
                     // width: 42%;
                 }
+                .panel-hobbies {
+                    height: 90%;
+                    div {
+                        height: 100%;
+                    }
+                }
             }
             .artists {
                 .avatar-artists {
-                    width: calc(80px - 4px);
-                    height: calc(58% - 4px);
+                    // width: calc(80px - 4px);
+                    // height: calc(58% - 4px);
                     transition: width 0.2s ease, height 0.2s ease; 
                     &:hover {
-                        width: calc(19% - 4px);
-                        height: calc(76% - 4px);
+                        // width: calc(19% - 4px);
+                        // height: calc(76% - 4px);
                     }
                 }
                 .card-artists {
