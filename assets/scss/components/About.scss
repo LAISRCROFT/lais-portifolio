@@ -63,6 +63,15 @@
         }
     }
 }
+::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: #d2d2f0;
+}
+
+::selection {
+    color: black;
+    background: #d2d2f0;
+}
 @media screen and (min-width: 576px) {
     .about {
         .foto {
