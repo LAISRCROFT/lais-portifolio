@@ -31,6 +31,15 @@
                 width: 100%;
             }
         }
+        ::-moz-selection {
+            color: white !important;
+            background: #7676ab78 !important;
+        }
+        
+        ::selection {
+            color: white !important;
+            background: #7676ab78 !important;
+        }
     }
     
     .topo::before {

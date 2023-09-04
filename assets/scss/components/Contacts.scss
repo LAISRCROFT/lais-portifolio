@@ -35,4 +35,14 @@
             color: #FFF;
         }
     }
+    
+    ::-moz-selection {
+        color: #6e6eaa !important;
+        background: #ffffff78 !important;
+    }
+    
+    ::selection {
+        color: #6e6eaa !important;
+        background: #ffffff78 !important;
+    }
 }
